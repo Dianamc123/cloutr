@@ -80,19 +80,21 @@
 		</div>
 		<div class="modal-body">
 			<!-- formulario -->
-				<form action="">
+				<form id="formajax" action="https://launchrock.us17.list-manage.com/subscribe/post?u=8e81c3278ae18c636e05d2f65&amp;id=5af05f0ea4" method="POST">
 					<div class="form-group">
 						<label>Full Name</label>
-						<input name="email" type="text" class="form-control" placeholder="Jhon Doe" require maxlength="140">
+						<input name="FNAME" type="text" class="form-control" placeholder="Jhon Doe" require maxlength="140">
 					</div>
 
 					<div class="form-group">
 						<label>Email Address</label>
-						<input name="email" type="email" class="form-control" require placeholder="jhon@email.com" >
+						<input name="EMAIL" type="email" class="form-control" require placeholder="jhon@email.com" >
 					</div>
 
 					<div class="form-group">
-						<button type="button" class="btn btn-block btn-primary">Save changes</button>
+						<input type="checkbox" value="1" name="group[6623][1]" id="mce-group[6623]-6623-0" checked>
+						<input type="hidden" name="b_8e81c3278ae18c636e05d2f65_5af05f0ea4" tabindex="-1" value="">
+						<input type="submit" name="subscribe" class="btn btn-block btn-primary" value="Save changes">
 					</div>
 
 				</form>
@@ -108,6 +110,8 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- plugin de contador -->
   <script src="js/jquery.countdown.min.js"></script>
+  <!-- plugin validador -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
   <!-- contador de jquery -->
   <script src="js/main.js"></script>
 </body>
