@@ -21,13 +21,7 @@
         font-size:1.5rem;
         left: calc(50% - 3rem);
     }
-    #pet1{
-      margin: 25% 0 0 15%
-    }
-
-    #pet2{
-        margin: 35% 15% 0 0
-    }
+    
 }
 
  /* Extra small devices (portrait phones, less than 576px) */
