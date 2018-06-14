@@ -91,7 +91,7 @@ body{
 }
 
 #title h2{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .textP p{
@@ -770,8 +770,8 @@ body{
 
 .blue
 {
-	 background-color: #ff3c2e;
-    border-bottom: 5px solid #cb3227;
+	background-color: #ee3a3c;
+    border-bottom: 5px solid #c13233;
 	text-decoration:none;
 }
 
@@ -793,7 +793,7 @@ body{
 
 .clock{
   position: absolute;
-  top: 27%;
+  top: 36%;
   left: 0;
   right: 0;
   color: #FFF;
