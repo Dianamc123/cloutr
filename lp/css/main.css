@@ -828,13 +828,15 @@ body{
 /*  ====================*/
 #pet1,
 #pet2{
-  width: 10rem; 
-  height: 10rem;
+  width: 8rem; 
   border-radius:100%;
+  cursor: pointer;
+  position: absolute
 }
 
 #pet1{
-  margin: 20% 0 0 25%;
+  top: 20%;
+  left: 25%;
   animation: bounce 1.25s infinite;
 }
 
