@@ -90,6 +90,8 @@ body{
     font-size: 6rem;
 }
 
+
+
 #title h2{
     font-size: 3rem;
 }
@@ -122,8 +124,8 @@ body{
 .rocket {
   position: absolute;
   bottom: 0;
-  width: 18rem;
-  left: calc(50% - 10rem);
+  width: 16rem;
+  left: calc(50% - 9rem);
 }
 .rocket .rocket-body {
   width: 80px;
@@ -806,6 +808,17 @@ body{
   color: rgba(255, 161, 81, 0.5);
   font-weight: bold;
 }
+
+.textP {
+  position: absolute;
+  top: 44%;
+  left: calc(50% - 32rem);
+  color: white;
+}
+
+.textP p{
+  line-height: 1.5;
+}
 /* ============================= */
 /* MODAL  */
 /* ============================= */
@@ -841,17 +854,20 @@ body{
 /*  ====================*/
 #pet1,
 #pet2{
-  width: 10rem; 
-  height: 10rem;
+  width: 8rem; 
   border-radius:100%;
+  cursor: pointer;
+  position: absolute
 }
 
 #pet1{
-  margin: 20% 0 0 25%;
+  top: 50%;
+  left: 25%;
   animation: bounce 1.25s infinite;
 }
 
 #pet2{
-  margin: 30% 25% 0 0;
+  top: 70%;
+  right: 25%;
   animation: bounce 1.75s infinite;
 }

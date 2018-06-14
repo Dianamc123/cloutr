@@ -1,5 +1,5 @@
 /* Medium devices (tablets, 768px and down) */
-@media (max-width: 768px) { 
+@media (max-width: 767.98px) { 
     #title{
         font-size:3.5rem;
     }
@@ -10,11 +10,31 @@
     .clock .digital-clock{
         font-size:3rem;
     }
-    #pet1{
-      margin: 25% 0 0 15%
+    
+    .rocket{
+        width: 16rem;
+        left: calc(50% - 7rem);
     }
 
-    #pet2{
-        margin: 35% 15% 0 0
+    .action-button{
+        padding: 2rem 1rem;
+        font-size:1.5rem;
+        left: calc(50% - 3rem);
     }
+    
 }
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    #title{
+        font-size:2.5rem;
+    }
+
+    #pet1{
+        margin: 45% 0 0 15%
+    }
+  
+    #pet2{
+          margin: 55% 15% 0 0
+    }
+ }
