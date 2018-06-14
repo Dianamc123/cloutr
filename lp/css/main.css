@@ -757,15 +757,15 @@ body{
 }
 
 .action-button {
-    padding: 2.5rem 1.3rem;
+  padding: 2.5rem 1.4rem;
     /* float: left; */
     border-radius: 50px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #FFF;
     text-decoration: none;
-	position:absolute;
-  bottom:1%;
-  left: calc(50% - 5.6rem);
+    position: absolute;
+    bottom: 1%;
+    left: calc(50% - 4.6rem);
   text-align:center;
   outline: none;
 }
@@ -795,7 +795,7 @@ body{
 
 .clock{
   position: absolute;
-  top: 36%;
+  top: 41%;
   left: 0;
   right: 0;
   color: #FFF;
@@ -804,8 +804,8 @@ body{
 
 .clock .digital-clock{
   font-family: 'alarm_clockregular';
-  font-size: 4rem;
-  color: rgba(255, 161, 81, 0.5);
+	font-size: 3rem;
+	color: #ee3a3c;
   font-weight: bold;
 }
 
