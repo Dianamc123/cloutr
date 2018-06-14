@@ -822,9 +822,16 @@ body{
 /* ============================= */
 /* MODAL  */
 /* ============================= */
+.modal .modal-header{
+	background: linear-gradient(40deg,#f3968f,#F44336)!important;
+	border-radius: 1rem 1rem 0 0;
+	}
 .modal .modal-title,
 .modal{
-  font-size: 20px;
+      font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
 }
 .modal .close{
   font-size:24px;  
@@ -847,6 +854,11 @@ body{
 }
 .modal .modal-header{
   padding: 2rem;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 1rem;
 }
 
 /* ================ */
