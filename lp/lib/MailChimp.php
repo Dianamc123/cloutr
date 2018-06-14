@@ -3,15 +3,12 @@ class MailChimp
 {
     #-- variables --#
     static $api = "1e14b756c620179b90867a782a5693fc-us17"; # api de CloudTr
-    static $endpoint = "https://us15.api.mailchimp.com/3.0/"; # url de endpoint 
+    static $endpoint = "https://us15.api.mailchimp.com/3.0/"; # url de endpoint
+    static $listID = "5af05f0ea4"; 
     static $content = NULL;
     static $length = 0;
     static $info = NULL;
     static $return = NULL;
-
-    static $list =array(
-            "users_crm" => "27742e4c7a"
-    );
 
 
     //-- crear la lista ---//
@@ -36,7 +33,10 @@ class MailChimp
 
         foreach($obj as $suscribe){
             $json["members"][] = array(
-                "email_address" => $suscribe, 
+                'merge_fields'  => array(
+                    'FNAME' => $suscribe["name"]
+                ),
+                "email_address" => $suscribe["email"], 
                 "status" =>  "subscribed"
             );
         }

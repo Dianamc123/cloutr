@@ -1,5 +1,7 @@
 <?php 
 
+phpinfo();
+
 //-- importamos la libreria de mailchimp --//
 require_once("lib/Mailchimp.php");
 
@@ -13,11 +15,22 @@ $post = $_POST;
 $tk = "thanks.html";
 
 //-- script de redireccion --//
-$script ="<script> window.location = $tk; </script>";
+$script ="<script> window.location.href = '$tk'; </script>";
 
 // verificamos si no se encuentran vacios
-if( !empty( $post["name"] ) || !empty($post["email"]) )
-    echo $script;
-else
+if( !empty( $post["name"] ) && !empty($post["email"]) ){
+    
+    // creamos los datos a mailchimp 
+    $data[] = array( 
+                  "name" => $post["name"],
+                  "email" =>  $post["email"]
+                );
+
+    //-- enviamos los datos a la lista de mailchimp 
+    $r = $mailchimp->Suscribe( Mailchimp::$listID, $data );
+
+    var_dump($r);
+    //echo $script;
+}else
     echo "Se han enviado campos vacios!";
 ?>
