@@ -86,16 +86,29 @@ body{
   padding-left: 10px;
   line-height: 1;
 }
-#title span {
-  /* background: -webkit-linear-gradient(white, #38495a); */
-  background: white;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#title h1 {
+    font-size: 6rem;
 }
 
-#title span.p{
-  display: block;
+#title h2{
+    font-size: 4rem;
 }
+
+.textP p{
+    font-size: 2rem;
+	position: absolute;
+	top: 43%;
+	left: 0;
+	right: 0;
+	color: #FFF;
+	text-align: center;
+	font-family: 'Lato', regular;
+	font-weight: 300;
+	margin-top: -50px;
+	padding-left: 10px;
+	line-height: 1;
+}
+
 
 @keyframes animStar {
   from {
