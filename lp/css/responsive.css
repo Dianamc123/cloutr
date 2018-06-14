@@ -1,0 +1,20 @@
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) { 
+    #title{
+        font-size:3.5rem;
+    }
+
+    .clock{
+        top: 23%;
+    }
+    .clock .digital-clock{
+        font-size:3rem;
+    }
+    #pet1{
+      margin: 25% 0 0 15%
+    }
+
+    #pet2{
+        margin: 35% 15% 0 0
+    }
+}
