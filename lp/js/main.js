@@ -21,4 +21,6 @@ $(document).ready(function($){
     
     });
   }
+  // envio del formulario por ajax  
+
 });
