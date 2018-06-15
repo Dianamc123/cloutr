@@ -1,7 +1,4 @@
 <?php 
-
-phpinfo();
-
 //-- importamos la libreria de mailchimp --//
 require_once("lib/Mailchimp.php");
 
