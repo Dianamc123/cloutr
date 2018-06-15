@@ -26,8 +26,8 @@ if( !empty( $post["name"] ) && !empty($post["email"]) ){
     //-- enviamos los datos a la lista de mailchimp 
     $r = $mailchimp->Suscribe( Mailchimp::$listID, $data );
 
-    var_dump($r);
-    //echo $script;
+    //var_dump($r);
+    echo $script;
 }else
     echo "Se han enviado campos vacios!";
 ?>
