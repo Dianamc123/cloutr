@@ -1,18 +1,24 @@
 /* Medium devices (tablets, 768px and down) */
-@media (max-width: 767.98px) { 
-    #title{
-        font-size:3.5rem;
+@media (max-width: 768px) {
+
+    #title h2{
+        font-size:2.5rem;
+    }
+
+    #logo{
+        width: 9rem;
+        margin-bottom:1rem;
     }
 
     .clock{
-        top: 23%;
+        top: 30%;
     }
     .clock .digital-clock{
         font-size:3rem;
     }
     
     .rocket{
-        width: 16rem;
+        width: 14.5rem;
         left: calc(50% - 7rem);
     }
 
@@ -21,20 +27,94 @@
         font-size:1.5rem;
         left: calc(50% - 3rem);
     }
+
+
+    #pet1{
+        left:15%;
+    }
+
+    #pet2{
+        top: 65%;
+        right: 16%;
+    }
     
 }
 
+
  /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-    #title{
-        font-size:2.5rem;
+@media (max-width: 576px) { 
+    .rocket{
+        width: 13rem;
+        left: calc(50% - 6.5rem);
+    }
+
+    #title h2{
+        font-size: 1.8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #logo{
+        width: 8rem;
+    }
+
+    .clock{
+        top: 33%;
+    }
+
+    .rocket .exhaust-fumes li:nth-child(6){
+        left: 0rem;
+        top: 24rem;
+    }
+
+    .rocket .exhaust-fumes li:nth-child(8){
+        left: 10rem;
+        top: 25rem;
+    }
+
+    .rocket .exhaust-fumes li:nth-child(7){
+        left: -7rem;
+        top: 26rem;
+    }
+
+    .modal form{
+        padding: 0 2rem;
     }
 
     #pet1{
-        margin: 45% 0 0 15%
+        width: 5rem;
+        left:10%;
     }
-  
+
     #pet2{
-          margin: 55% 15% 0 0
+        width: 5rem;
+        top: 65%;
+        right: 10%;
     }
  }
+
+ 
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 375px) { 
+    #title h2{
+        padding:0;
+    }
+}
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ @media (max-width: 320px) { 
+    #title h2{
+        padding:0;
+    }
+
+    #title h2{
+        padding:0;
+    }
+
+    .clock{
+        top:36%;
+    }
+    .modal-dialog{
+        margin:.5rem;
+    }
+}
