@@ -829,6 +829,7 @@ body{
 .modal .modal-header{
 	background: linear-gradient(40deg,#f3968f,#F44336)!important;
 	border-radius: 1rem 1rem 0 0;
+	font-family: 'Poiret One', cursive;
 	}
 .modal .modal-title,
 .modal{
@@ -836,6 +837,10 @@ body{
     color: #fff;
     font-weight: 300;
     text-align: center;
+}
+#subT{
+font-size: 1em;
+font-weight: 600;
 }
 .modal .close{
   font-size:24px;  
@@ -850,7 +855,7 @@ body{
 }
 
 .modal form{
-padding: 0 4em;
+padding: 0 0.5em;
 }
 .modal .form-control{
   padding: 1rem .5rem;
@@ -880,7 +885,7 @@ padding: 0 4em;
 #pet2{
   width: 8rem; 
   border-radius:100%;
-  cursor: pointer;
+  cursor: nter;
   position: absolute
 }
 
@@ -904,11 +909,21 @@ padding: 0 4em;
     border-left: none;
     border-right: none;
 }
-
+form p{
+color: black;
+font-size: 0.8em;
+}
 .form-control span {
 	    color: #4e4e4e;
     font-size: 0.7em;
 }
+
+.form-control:focus {
+	border-bottom: 2px solid #f44336;
+    border-radius: 0;
+}
+
+
 
 .md-form span {
 	    color: #4e4e4e;
@@ -933,8 +948,7 @@ padding: 0 4em;
   
 .btn-primary {
     color: #fff;
-    /* background: linear-gradient(40deg,#f3968f,#F44336)!important; */
-    bacground: red;
+    background: #f44336;
     border-radius: 5em;
 	  border: none;
     transition: background .5s ease;
@@ -942,7 +956,18 @@ padding: 0 4em;
 
 
 .btn-primary:hover {
-  background: #16264B;
-     /* background: linear-gradient(40deg,#F44336,#f3968f)!important;   */
+     background: #f15448;
+}
+
+#Ihave{
+  color: black;
+  font-size: 0.8em;
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 550px;
+    margin: 1.75rem auto;
+}
 }
 

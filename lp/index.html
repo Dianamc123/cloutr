@@ -65,7 +65,7 @@
 </div>
 <!-- boton de accion  -->
 <div class="row">
-	<a href="#" class="action-button shadow animateB blue animated infinite pulse" data-toggle="modal" data-target="#form1">Abroad</a>
+	<a href="#" class="action-button shadow animateB blue animated infinite pulse" data-toggle="modal" data-target="#form1">Ignition</a>
 </div>
 
 <!-- modal del formulario -->
@@ -75,8 +75,9 @@
 		<div class="modal-header">
 
 			<h5 class="modal-title centered">
-				<p><img src="images/logo-blanco.png" width="50"></p>
-				<p>By teaming up with people in your community to purchase the same good or service you create leverage to negotiate better deals.</p>
+				<p><img src="images/logo-blanco.png" width="70"></p>
+				<p id="subT">become a pioneer. become a leader. 
+			    become a disrupter.</p>
 			</h5>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
@@ -85,20 +86,22 @@
 		<div class="modal-body">
 			<!-- formulario -->
 				<form id="formajax" action="send.php" method="POST">
-					<div class="form-group">
-						<label>Full Name</label>
-						<input name="name" type="text" class="form-control" placeholder="Jhon Doe" require maxlength="140">
+					<div class="md-form form-group">
+                                	<p><strong>Register below and come aboard!</strong><br> 
+                   	  We are building a first of its kind website which will allow you to use power in numbers to negotiate deeper discounts. You will no longer have to wait for what you want to go on sale... you will MAKE it go on sale!<br>The first adopters to register will be immortalized on our website forever!<br></p>
+						
 					</div>
+<div class="form-group col-auto">
+    <input type="text" class="form-control" id="name" placeholder="Full Name">
+  </div>
+  <div class="form-group col-auto">
+    <input type="email" class="form-control" id="email" placeholder="Email">
+  </div>
 
 					<div class="form-group">
-						<label>Email Address</label>
-						<input name="email" type="email" class="form-control" require placeholder="jhon@email.com" >
-					</div>
-
-					<div class="form-group">
-						<!-- <input type="checkbox" value="1" name="group[6623][1]" id="mce-group[6623]-6623-0" checked> -->
-						<!-- <input type="hidden" name="b_8e81c3278ae18c636e05d2f65_5af05f0ea4" tabindex="-1" value=""> -->
-						<input type="submit" name="subscribe" class="btn btn-block btn-primary" value="Save changes">
+						<input type="checkbox" value="1" name="group[6623][1]" id="mce-group[6623]-6623-0" checked> <span id="Ihave">I have read and undestood the Privacy Policy</span><br><br>
+						 <input type="hidden" name="b_8e81c3278ae18c636e05d2f65_5af05f0ea4" tabindex="-1" value=""> 
+						<input type="submit" name="subscribe" class="btn btn-block btn-primary" value="LAUNCH">
 					</div>
 
 				</form>
