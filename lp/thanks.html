@@ -20,6 +20,14 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="stars"></div>
 <div id="stars2"></div>
 <div id="stars3"></div>
@@ -28,89 +36,18 @@
       <img src="images/logo.png" id="logo">
       <h2>The New Experience of Buying</h2>
 	</div>
-	 <!-- clock  -->
-	 <div class="clock">
-		<span class="digital-clock" id="clock" data-date-time="2018/07/01">
-			00:00:00:00
-		</span>
-	</div>
 </div>
-<div class="row">
-<div class="rocket">
-	<div class="spaces-shuttler">
-		 <!-- rocket -->
-		<img src="images/rocket2.png" class="img-fluid animated bounce infinite">
-	</div>
-
-    <ul class="exhaust-fumes">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+<div class="col-sm-6 offset-sm-3">
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title">Thank you</h2>
+    <p class="card-text">We will be in touch with you soon</p>
+    <div class="fb-like" data-href="https://www.facebook.com/cloutrinc/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true">nm
+    </div>
   </div>
 </div>
-<!-- pets  -->
-<div id="pet1" class="float-left">
-	<img src="images/pet.png" class="img-fluid" data-toggle="modal" data-target="#form1" alt="">
-</div>
-<!-- pets -->
-<div id="pet2" class="float-right">
-	<img src="images/pet2.png" class="img-fluid" data-toggle="modal" data-target="#form1" alt="">
-</div>
-<!-- boton de accion  -->
-<div class="row">
-	<a href="#" class="action-button shadow animateB blue animated infinite pulse" data-toggle="modal" data-target="#form1">Ignition</a>
 </div>
 
-<!-- modal del formulario -->
-<div id="form1" class="modal" tabindex="-1" role="dialog">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-		<div class="modal-header">
-
-			<h5 class="modal-title centered">
-				<p><img src="images/logo-blanco.png" width="70"></p>
-				<p id="subT">become a pioneer. become a leader. 
-			    become a disrupter.</p>
-			</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-			</button>
-		</div>
-		<div class="modal-body">
-			<!-- formulario -->
-				<form id="formajax" action="send.php" method="POST">
-					<div class="md-form form-group">
-                                	<p><strong>Register below and come aboard!</strong><br> 
-                   	  We are building a first of its kind website which will allow you to use power in numbers to negotiate deeper discounts. You will no longer have to wait for what you want to go on sale... you will MAKE it go on sale!<br>The first adopters to register will be immortalized on our website forever!<br></p>
-						
-					</div>
-<div class="form-group col-auto">
-    <input type="text" class="form-control" id="name" placeholder="Full Name">
-  </div>
-  <div class="form-group col-auto">
-    <input type="email" class="form-control" id="email" placeholder="Email">
-  </div>
-
-					<div class="form-group">
-						<input type="checkbox" value="1" name="group[6623][1]" id="mce-group[6623]-6623-0" checked> <span id="Ihave">I have read and undestood the Privacy Policy</span><br><br>
-						 <input type="hidden" name="b_8e81c3278ae18c636e05d2f65_5af05f0ea4" tabindex="-1" value=""> 
-						<input type="submit" name="subscribe" class="btn btn-block btn-primary" value="LAUNCH">
-					</div>
-
-				</form>
-			<!-- / formulario  -->
-		</div>
-		</div>
-	</div>
-</div>
-  
 <!-- jquery  -->
   <script src="js/jquery-1.9.1.min.js"></script>
   <!-- boostrap -->

@@ -976,3 +976,13 @@ font-size: 0.8em;
 }
 }
 
+.card {
+	margin-top: 60%;
+    background-color: #bdbec00f;
+    border: none;
+    border-radius: 1em;
+	color: white;
+	text-align:center;
+	font-family: 'Poiret One', cursive;
+}
+
