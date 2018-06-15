@@ -91,6 +91,10 @@ body{
 }
 
 
+#logo{
+  width: 12rem;
+  margin-bottom:2rem;
+}
 
 #title h2{
     font-size: 3rem;
@@ -795,7 +799,7 @@ body{
 
 .clock{
   position: absolute;
-  top: 41%;
+  top: 37%;
   left: 0;
   right: 0;
   color: #FFF;
@@ -837,7 +841,7 @@ body{
   font-size:24px;  
 }
 .modal-dialog{
-  margin:12% auto;
+  margin:7% auto;
 }
 
 .modal .btn{
@@ -850,6 +854,11 @@ padding: 0 4em;
 }
 .modal .form-control{
   padding: 1rem .5rem;
+  outline: 0;
+}
+
+.modal .form-control:focus{
+   box-shadow: none;
 }
 
 .modal .form-control{
@@ -930,7 +939,6 @@ padding: 0 4em;
 	  border: none;
     transition: background .5s ease;
 }
-
 
 
 .btn-primary:hover {
