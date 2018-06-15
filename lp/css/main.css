@@ -924,17 +924,17 @@ padding: 0 4em;
   
 .btn-primary {
     color: #fff;
-    background: linear-gradient(40deg,#f3968f,#F44336)!important;
+    /* background: linear-gradient(40deg,#f3968f,#F44336)!important; */
+    bacground: red;
     border-radius: 5em;
-	border: none;
-	-webkit-transition: opacity 1s linear-gradient;
-  -moz-transition: opacity 1s linear-gradient;
-  -o-transition: opacity 1s linear-gradient;
-  transition: opacity 1s linear-gradient;
+	  border: none;
+    transition: background .5s ease;
 }
+
 
 
 .btn-primary:hover {
-    background: linear-gradient(40deg,#F44336,#f3968f)!important;
-	transition: background 0.45s;
+  background: #16264B;
+     /* background: linear-gradient(40deg,#F44336,#f3968f)!important;   */
 }
+
