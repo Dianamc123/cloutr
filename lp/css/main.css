@@ -845,6 +845,9 @@ body{
   font-size: 16px;
 }
 
+.modal form{
+padding: 0 4em;
+}
 .modal .form-control{
   padding: 1rem .5rem;
 }
@@ -882,4 +885,56 @@ body{
   top: 70%;
   right: 25%;
   animation: bounce 1.75s infinite;
+}
+
+/*FORM*/
+.form-control {
+	border-radius: none !important;
+    border-bottom: 1px solid #cbcbcb;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form-control span {
+	    color: #4e4e4e;
+    font-size: 0.7em;
+}
+
+.md-form span {
+	    color: #4e4e4e;
+    font-size: 0.7em;
+}
+
+.form-gradient input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #fd9267;
+  -webkit-box-shadow: 0 1px 0 0 #fd9267;
+  box-shadow: 0 1px 0 0 #fd9267; }
+
+.form-gradient input[type=text]:focus:not([readonly]) + label {
+  color: #4f4f4f; }
+
+.form-gradient input[type=email]:focus:not([readonly]) {
+  border-bottom: 1px solid #fd9267;
+  -webkit-box-shadow: 0 1px 0 0 #fd9267;
+  box-shadow: 0 1px 0 0 #fd9267; }
+
+.form-gradient input[type=email]:focus:not([readonly]) + label {
+  color: #4f4f4f; }
+  
+.btn-primary {
+    color: #fff;
+    background: linear-gradient(40deg,#f3968f,#F44336)!important;
+    border-radius: 5em;
+	border: none;
+	-webkit-transition: opacity 1s linear-gradient;
+  -moz-transition: opacity 1s linear-gradient;
+  -o-transition: opacity 1s linear-gradient;
+  transition: opacity 1s linear-gradient;
+}
+
+
+.btn-primary:hover {
+    background: linear-gradient(40deg,#F44336,#f3968f)!important;
+	transition: background 0.45s;
 }
