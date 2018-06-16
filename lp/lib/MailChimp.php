@@ -3,7 +3,7 @@ class MailChimp
 {
     #-- variables --#
     static $api = "1e14b756c620179b90867a782a5693fc-us17"; # api de CloudTr
-    static $endpoint = "https://us15.api.mailchimp.com/3.0/"; # url de endpoint
+    static $endpoint = "https://us17.api.mailchimp.com/3.0/"; # url de endpoint
     static $listID = "5af05f0ea4"; 
     static $content = NULL;
     static $length = 0;

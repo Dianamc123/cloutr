@@ -92,12 +92,12 @@ body{
 
 
 #logo{
-  width: 12rem;
+  width: 11rem;
   margin-bottom:2rem;
 }
 
 #title h2{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .textP p{
@@ -128,8 +128,8 @@ body{
 .rocket {
   position: absolute;
   bottom: 0;
-  width: 16rem;
-  left: calc(50% - 9rem);
+  width: 11rem;
+  left: calc(52% - 7.5rem);
 }
 .rocket .rocket-body {
   width: 80px;
@@ -226,48 +226,35 @@ body{
   width: 120px;
   height: 120px;
   /* left: -40px; */
-  top: 330px;
+  top: 180px;
   animation: fumes 3s 1s infinite;
 }
 .rocket .exhaust-fumes li:nth-child(4) {
   width: 100px;
   height: 100px;
-  left: -10rem;
+  left: -2rem;
   animation: fumes 4s 2s infinite;
-  top: 38rem;
+  top: 21rem;
 }
 .rocket .exhaust-fumes li:nth-child(5) {
   width: 130px;
   height: 130px;
   left: -12rem;
-  top: 35rem;
+  top: 25rem;
   animation: fumes 5s infinite;
 }
 .rocket .exhaust-fumes li:nth-child(6) {
-  width: 130px;
-	height: 130px;
-	left: 3rem;
-	top: 30rem;
-  animation: fumes2 10s infinite;
-}
-.rocket .exhaust-fumes li:nth-child(7) {
   width: 100px;
   height: 100px;
   left: -5rem;
-  top: 31rem;
+  top: 28rem;
+    animation: fumes 5s infinite;
 }
-.rocket .exhaust-fumes li:nth-child(8) {
+.rocket .exhaust-fumes li:nth-child(7) {
   width: 110px;
   height: 110px;
   left: 12rem;
-  top: 31rem;
-}
-.rocket .exhaust-fumes li:nth-child(9) {
-  width: 90px;
-  height: 90px;
-  left: 20rem;
-  top: 35rem;
-  animation: fumes 20s infinite;
+  top: 29rem;
 }
 
 .star li {
@@ -761,7 +748,7 @@ body{
 }
 
 .action-button {
-  padding: 2.5rem 1.4rem;
+  padding: 0.4rem 0.5rem;
     /* float: left; */
     border-radius: 50px;
     font-size: 1.5rem;
@@ -769,15 +756,20 @@ body{
     text-decoration: none;
     position: absolute;
     bottom: 1%;
-    left: calc(50% - 4.6rem);
+    left: calc(51% - 4.5rem);
   text-align:center;
   outline: none;
 }
 
 .blue
 {
-	background-color: #ee3a3c;
-    border-bottom: 5px solid #c13233;
+  background-color: #ee3a3c;
+      top: 0;
+    height: 35px;
+  border-bottom: 5px solid #c13233;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 	text-decoration:none;
 }
 
@@ -857,6 +849,7 @@ font-weight: 600;
 .modal form{
 padding: 0 0.5em;
 }
+
 .modal .form-control{
   padding: 1rem .5rem;
   outline: 0;
@@ -901,22 +894,25 @@ padding: 0 0.5em;
 }
 
 #pet2{
-  top: 70%;
+  top: 63%;
   right: 25%;
   animation: bounce 1.75s infinite;
 }
 
 /*FORM*/
 .form-control {
-	border-radius: none !important;
-    border-bottom: 1px solid #cbcbcb;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #575757;
+    background-color: #ffffff;
+    /* border: 1px solid #ced4da; */
+    border-radius: 1em;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
 form p{
-color: black;
-font-size: 0.8em;
+color: white;
+font-size: 1.3em;
 }
 .form-control span {
 	    color: #4e4e4e;
@@ -924,32 +920,13 @@ font-size: 0.8em;
 }
 
 .form-control:focus {
-	border-bottom: 2px solid #f44336;
-    border-radius: 0;
+    border-radius: 1em;
 }
 
-
-
-.md-form span {
-	    color: #4e4e4e;
-    font-size: 0.7em;
+.help-block.form-error {
+    color: #ff7670;
+    font-size: 14px;
 }
-
-.form-gradient input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #fd9267;
-  -webkit-box-shadow: 0 1px 0 0 #fd9267;
-  box-shadow: 0 1px 0 0 #fd9267; }
-
-.form-gradient input[type=text]:focus:not([readonly]) + label {
-  color: #4f4f4f; }
-
-.form-gradient input[type=email]:focus:not([readonly]) {
-  border-bottom: 1px solid #fd9267;
-  -webkit-box-shadow: 0 1px 0 0 #fd9267;
-  box-shadow: 0 1px 0 0 #fd9267; }
-
-.form-gradient input[type=email]:focus:not([readonly]) + label {
-  color: #4f4f4f; }
   
 .btn-primary {
     color: #fff;
@@ -965,24 +942,135 @@ font-size: 0.8em;
 }
 
 #Ihave{
-  color: black;
+  color: white;
   font-size: 0.8em;
 }
 
-@media (min-width: 576px){
-.modal-dialog {
-    max-width: 550px;
-    margin: 1.75rem auto;
-}
-}
-
 .card {
-	margin-top: 60%;
+  margin-top: 235px;
+      z-index: 1;
     background-color: #bdbec00f;
     border: none;
     border-radius: 1em;
 	color: white;
 	text-align:center;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Lato', cursive;
+    font-weight: 300;
 }
 
+/*tap*/
+.iconH {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  vertical-align: top;
+  position: relative;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.hand-icon {
+  position: relative;
+}
+
+.hand {
+  background: #fff;
+  width: 5px;
+  height: 16px;
+  border-radius: 20px;
+  position: relative;
+  left: -5px;
+  margin-bottom: 17px;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-animation: handAnim 1.2s infinite;
+          animation: handAnim 1.2s infinite;
+}
+.hand:after {
+  content: "";
+  background: #fff;
+  width: 17px;
+  height: 18px;
+  border-radius: 4px 8px 38px 15px;
+  -webkit-transform: rotate(6deg) skewY(10deg);
+          transform: rotate(6deg) skewY(10deg);
+  position: absolute;
+  top: 13px;
+  left: -1px;
+}
+.hand:before {
+  content: "";
+  background: #fff;
+  width: 6px;
+  height: 17px;
+  border-radius: 2px 40px 20px 20px;
+  position: absolute;
+  top: 12px;
+  left: -6px;
+  -webkit-transform: rotate(-38deg);
+          transform: rotate(-38deg);
+}
+.hand .circle {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  opacity: .5;
+  -webkit-animation: circleAnim 1.2s infinite 2.1s;
+          animation: circleAnim 1.2s infinite 2.1s;
+}
+
+@-webkit-keyframes handAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes handAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes circleAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}

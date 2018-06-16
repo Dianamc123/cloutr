@@ -1,6 +1,6 @@
 <?php 
 //-- importamos la libreria de mailchimp --//
-require_once("lib/Mailchimp.php");
+include_once( __DIR__ ."/lib/MailChimp.php");
 
 // creamos una instancia de la libreria 
 $mailchimp = new MailChimp();
@@ -13,6 +13,7 @@ $tk = "thanks.html";
 
 //-- script de redireccion --//
 $script ="<script> window.location.href = '$tk'; </script>";
+
 
 // verificamos si no se encuentran vacios
 if( !empty( $post["name"] ) && !empty($post["email"]) ){

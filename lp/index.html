@@ -26,14 +26,34 @@
 <div class="row">
     <div id="title">
       <img src="images/logo.png" id="logo">
-      <h2>The New Experience of Buying</h2>
+      <h2>TEAM UP • NEGOCIATE • SAVE</h2>
 	</div>
-	 <!-- clock  -->
-	 <div class="clock">
-		<span class="digital-clock" id="clock" data-date-time="2018/07/01">
-			00:00:00:00
-		</span>
-	</div>
+</div>
+<div class="col-sm-6 offset-sm-3">
+<div class="card">
+  <div class="card-body">
+	<form id="formajax" action="send.php" method="POST">
+		<div class="md-form form-group row">
+		<div class="form-group col-sm-12">
+			<p><strong>We Need Crew! Become an Early Adopter! Join Now!</strong></p>
+		</div>
+		<div class="form-group col-sm-5">
+			<input type="text" name="name"  data-validation="required" class="form-control" id="name" placeholder="Full Name"  require maxlength="140">
+		</div>
+		<div class="form-group col-sm-5">
+			<input type="email" name="email" data-validation="required" class="form-control" id="email" placeholder="Email"  required>
+		</div>
+		<div class="form-group col-sm-2">
+			<input type="hidden" name="b_8e81c3278ae18c636e05d2f65_5af05f0ea4" tabindex="-1" value="">
+			<input type="submit" name="subscribe" class="action-button shadow animateB blue animated infinite pulse" value="LAUNCH">
+		</div>
+		<div class="col-sm-12 centered">
+			<a href="#" id="Ihave">Registering to join our crew of brave pioneers indicates you consent with our privacy policy</a>
+		</div>
+		</div>
+	</form>
+  </div>
+</div>
 </div>
 <div class="row">
 <div class="rocket">
@@ -49,66 +69,28 @@
       <li></li>
       <li></li>
       <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
     </ul>
-  </div>
+</div>
 </div>
 <!-- pets  -->
 <div id="pet1" class="float-left">
 	<img src="images/pet.png" class="img-fluid" data-toggle="modal" data-target="#form1" alt="">
+	<div class="iconH">
+		<div class="icon-wrapper">
+			<div class="hand-icon">
+				<div class="hand">
+					<div class="circle"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
 <!-- pets -->
 <div id="pet2" class="float-right">
 	<img src="images/pet2.png" class="img-fluid" data-toggle="modal" data-target="#form1" alt="">
 </div>
-<!-- boton de accion  -->
-<div class="row">
-	<a href="#" class="action-button shadow animateB blue animated infinite pulse" data-toggle="modal" data-target="#form1">Ignition</a>
-</div>
-
-<!-- modal del formulario -->
-<div id="form1" class="modal" tabindex="-1" role="dialog">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-		<div class="modal-header">
-
-			<h5 class="modal-title centered">
-				<p><img src="images/logo-blanco.png" width="70"></p>
-				<p id="subT">become a pioneer. become a leader. 
-			    become a disrupter.</p>
-			</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-		</div>
-		<div class="modal-body">
-			<!-- formulario -->
-				<form id="formajax" action="send.php" method="POST">
-					<div class="md-form form-group">
-                                	<p><strong>Register below and come aboard!</strong><br> 
-                   	  We are building a first of its kind website which will allow you to use power in numbers to negotiate deeper discounts. You will no longer have to wait for what you want to go on sale... you will MAKE it go on sale!<br>The first adopters to register will be immortalized on our website forever!<br></p>
-
-					<div class="form-group col-auto">
-						<input type="text" name="name"  data-validation="required" class="form-control" id="name" placeholder="Full Name"  require maxlength="140">
-					</div>
-					<div class="form-group col-auto">
-						<input type="email" name="email" data-validation="required" class="form-control" id="email" placeholder="Email"  required>
-					</div>
-
-					<div class="form-group">
-						<input type="checkbox" value="1" name="group[6623][1]" id="mce-group[6623]-6623-0" checked> <span id="Ihave">I have read and undestood the Privacy Policy</span><br><br>
-						 <input type="hidden" name="b_8e81c3278ae18c636e05d2f65_5af05f0ea4" tabindex="-1" value=""> 
-						<input type="submit" name="subscribe" class="btn btn-block btn-primary" value="LAUNCH">
-					</div>
-</div>
-				</form>
-			<!-- / formulario  -->
-		</div>
-		</div>
-	</div>
-</div>
+ 
   
 <!-- jquery  -->
   <script src="js/jquery-1.9.1.min.js"></script>
