@@ -23,4 +23,7 @@ $(document).ready(function($){
   }
   // envio del formulario por ajax  
   $.validate();
+  // popover
+  $('[data-toggle="popover"]').popover();
+  
 });
