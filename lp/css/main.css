@@ -888,15 +888,17 @@ padding: 0 0.5em;
 }
 
 #pet1{
-  top: 50%;
+  top: 64%;
   left: 25%;
   animation: bounce 1.25s infinite;
+  cursor: pointer;
 }
 
 #pet2{
-  top: 63%;
+  top: 70%;
   right: 25%;
   animation: bounce 1.75s infinite;
+    cursor: pointer;
 }
 
 /*FORM*/
@@ -959,16 +961,18 @@ font-size: 1.3em;
 }
 /* popover  */
 .popover{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+    max-width: 365px;
+  background-color: white;
+  border-radius: 1em;
 }
 
 /*tap*/
 .iconH {
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  vertical-align: top;
-  position: relative;
+    z-index: 1;
+    top: 80px;
+    left: 48%;
+  position: absolute;
 }
 
 .icon-wrapper {
@@ -984,7 +988,7 @@ font-size: 1.3em;
 }
 
 .hand {
-  background: #fff;
+  background: #29485c;
   width: 5px;
   height: 16px;
   border-radius: 20px;
@@ -998,7 +1002,7 @@ font-size: 1.3em;
 }
 .hand:after {
   content: "";
-  background: #fff;
+  background: #29485c;
   width: 17px;
   height: 18px;
   border-radius: 4px 8px 38px 15px;
@@ -1010,7 +1014,7 @@ font-size: 1.3em;
 }
 .hand:before {
   content: "";
-  background: #fff;
+  background: #29485c;
   width: 6px;
   height: 17px;
   border-radius: 2px 40px 20px 20px;
@@ -1021,7 +1025,7 @@ font-size: 1.3em;
           transform: rotate(-38deg);
 }
 .hand .circle {
-  background-color: #fff;
+  background-color: #29485c;
   width: 20px;
   height: 20px;
   border-radius: 50%;
