@@ -11,8 +11,7 @@ $(document).ready(function($){
         format = '%-D:' + format;
       }
       /*if(event.offset.weeks > 0) {
-        format = '%-w week%!w ' + format;
-      }*/
+d      }*/
       $(this).html(event.strftime(format));
     })
     .on('finish.countdown', function(event) {
@@ -24,6 +23,22 @@ $(document).ready(function($){
   // envio del formulario por ajax  
   $.validate();
   // popover
-  $('[data-toggle="popover"]').popover();
+  $("#pet1, #pet2").click(function(){
+
+    var _tis = $(this);
+    var _name = _tis.attr("id")
+    
+    if( _name == "pet1" )
+    {
+       _tis.popover("show");
+       $("#pet2").popover("hide");
+    }else{
+      _tis.popover("show");
+      $("#pet1").popover("hide");
+    }
+
+  });
+
+  //$('[data-toggle="popover"]').popover();
   
 });
