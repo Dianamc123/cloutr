@@ -1,3 +1,19 @@
+/* Medium devices (IPad Pro, 1024px and down) */
+@media (max-width: 1024px) {
+    .card{
+    width: 516px;
+    margin-top: 441px;
+    }
+    #pet1 {
+    top: 59%;
+    }
+    #pet1, #pet2 {
+    width: 14rem;
+    }
+    .iconH {
+    top: 136px;
+    }
+}
 /* Medium devices (tablets, 768px and down) */
 @media (max-width: 768px) {
 
@@ -22,9 +38,9 @@
         left: calc(50% - 7rem);
     }
 
-    .action-button{
-        padding: 2rem 1rem;
-        font-size:1.5rem;
+    .action-button {
+        padding: 1rem 1rem;
+        font-size: 1rem;
         left: calc(50% - 3rem);
     }
 
@@ -37,7 +53,15 @@
         top: 65%;
         right: 16%;
     }
+
+    .card {
+    width: 100%;
+    margin-top: 289px;
+    }
     
+    .iconH {
+    top: 136px;
+    }
 }
 
 
@@ -48,10 +72,11 @@
         left: calc(50% - 6.5rem);
     }
 
-    #title h2{
-        font-size: 1.8rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+    #title h2 {
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    letter-spacing: 6px;
     }
 
     #logo{
@@ -82,14 +107,32 @@
     }
 
     #pet1{
-        width: 5rem;
-        left:10%;
+    width: 8rem;
+    left: 10%;
+    top: 69%;
     }
 
-    #pet2{
-        width: 5rem;
-        top: 65%;
-        right: 10%;
+    #pet2 {
+    width: 8rem;
+    top: 73%;
+    right: 7%;
+    }
+
+    .card {
+    margin-top: 193px;
+    }
+
+    form p {
+    font-size: 0.8em;
+    }
+
+    .legalT{
+        margin-top: 32px;
+        line-height: 1em;
+        font-size: 0.9em;
+        }
+    .iconH {
+    top: 79px;
     }
  }
 
@@ -98,6 +141,10 @@
 @media (max-width: 375px) { 
     #title h2{
         padding:0;
+    }
+    
+    .card {
+    margin-top: 161px;
     }
 }
 
