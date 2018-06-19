@@ -963,10 +963,14 @@ font-size: 1.3em;
 .popover{
   font-size: 1.3rem;
     max-width: 365px;
-  background-color: white;
-  border-radius: 1em;
 }
-
+.popover-body {
+    padding: .5rem .75rem;
+    color: #212529;
+    background: #e8e8e8;
+    border-radius: 5px;
+    text-align: center;
+}
 /*tap*/
 .iconH {
     z-index: 1;
