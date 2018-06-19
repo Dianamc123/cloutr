@@ -950,6 +950,7 @@ font-size: 1.3em;
 
 .card {
   margin-top: 235px;
+      z-index: 1;
     background-color: #bdbec00f;
     border: none;
     border-radius: 1em;
