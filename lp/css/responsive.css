@@ -144,7 +144,7 @@
     }
     
     .card {
-    margin-top: 161px;
+    margin-top: 124px;
     }
 
     .rocket {
@@ -166,6 +166,10 @@
 
     .iconH {
     top: 50px;
+    }
+
+    #logo {
+    width: 6rem;
     }
 }
 
