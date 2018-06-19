@@ -146,6 +146,27 @@
     .card {
     margin-top: 161px;
     }
+
+    .rocket {
+    width: 8rem;
+    left: calc(58% - 6.5rem);
+    }
+
+    #pet2 {
+    width: 5rem;
+    top: 80%;
+    right: 15%;
+    }
+
+    #pet1 {
+    width: 5rem;
+    left: 14%;
+    top: 79%;
+    }
+
+    .iconH {
+    top: 50px;
+    }
 }
 
  /* Extra small devices (portrait phones, less than 576px) */
