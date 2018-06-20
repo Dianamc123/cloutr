@@ -105,7 +105,7 @@
     }
 
     .card {
-    margin-top: 193px;
+    margin-top: 170px;
     }
 
     form p {
@@ -131,6 +131,12 @@
     }
     .rocket .exhaust-fumes li{
         display: none;
+    }
+    .legalT {
+        font-size: 0;
+    }
+    .action-button {
+    margin-top: 0;
     }
  }
 
@@ -168,6 +174,13 @@
 
     #logo {
     width: 6rem;
+    }
+
+    .legalT {
+    font-size: 0;
+    }
+    .action-button {
+    margin-top: 0;
     }
 }
 
