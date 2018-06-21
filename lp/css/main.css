@@ -1087,3 +1087,12 @@ font-size: 1.3em;
     opacity: 0;
   }
 }
+
+#brands a{
+  font-size: 1.2em;
+  color: white;
+  }
+
+  #brands a:first-child{
+    padding-right: 10px;
+  }
