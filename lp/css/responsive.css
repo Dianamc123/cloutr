@@ -106,10 +106,11 @@
 
     .card {
     margin-top: 170px;
+    background-color: #1c1c1c94;
     }
 
     form p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     }
 
     .legalT{
@@ -133,7 +134,8 @@
         display: none;
     }
     .legalT {
-        font-size: 0;
+        font-size: 1em;
+        margin-top: 0;
     }
     .action-button {
     margin-top: 0;
@@ -177,7 +179,7 @@
     }
 
     .legalT {
-    font-size: 0;
+    font-size: 1em;
     }
     .action-button {
     margin-top: 0;
