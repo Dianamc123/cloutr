@@ -1,5 +1,6 @@
 /* Medium devices (IPad Pro, 1024px and down) */
 @media (max-width: 1024px) {
+
     .card{
     width: 516px;
     margin-top: 441px;
@@ -67,6 +68,7 @@
 
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) { 
+
     .rocket{
         width: 13rem;
         left: calc(50% - 6.5rem);
@@ -145,6 +147,7 @@
  
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 375px) { 
+
     #title h2{
         padding:0;
     }
@@ -188,6 +191,10 @@
 
  /* Extra small devices (portrait phones, less than 576px) */
  @media (max-width: 320px) { 
+    html{
+        overflow-y: auto ;
+        overflow-x: hide ;
+    }
     #title h2{
         padding:0;
     }
