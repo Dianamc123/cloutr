@@ -1,6 +1,9 @@
 /* Medium devices (IPad Pro, 1024px and down) */
 @media (max-width: 1024px) {
-
+    html{
+        overflow-y: auto ;
+        overflow-x: hide ;
+    }
     .card{
     width: 516px;
     margin-top: 441px;
@@ -17,7 +20,10 @@
 }
 /* Medium devices (tablets, 768px and down) */
 @media (max-width: 768px) {
-
+    html{
+        overflow-y: auto ;
+        overflow-x: hide ;
+    }
     #title h2{
         font-size:2.5rem;
     }
@@ -68,7 +74,10 @@
 
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) { 
-
+    html{
+        overflow-y: auto ;
+        overflow-x: hide ;
+    }
     .rocket{
         width: 13rem;
         left: calc(50% - 6.5rem);
@@ -147,7 +156,10 @@
  
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 375px) { 
-
+    html{
+        overflow-y: auto ;
+        overflow-x: hide ;
+    }
     #title h2{
         padding:0;
     }
