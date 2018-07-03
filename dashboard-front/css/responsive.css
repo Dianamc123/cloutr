@@ -1,0 +1,194 @@
+/*  tablet  */
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .container{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #pet{
+        display: none
+    }
+    main .main{
+        max-width: 100%;
+        border-radius: 0;
+    }
+    /* navbar */
+    .navbar-brand{
+        position: absolute;
+        left: 39%;
+        top:.5rem;
+        max-width: 150px;
+    }
+    .navbar-toggler{
+        position: relative;
+        top:.5rem;
+        left: 1%;
+    }
+    .navbar-toggler .fas.fa-bars{
+        font-size: 2rem;
+        color:#EF3D3D
+    }
+
+    .navbar i{
+        font-size:1.7rem;
+        color:#EF3D3D
+    }
+
+    .p-3{
+        padding: .5rem !important;
+    }
+    #navbarNav .navbar-nav{
+        padding-top: 1rem;
+    }
+
+    #navbarNav.navbar i{
+        font-size: 1.5rem;
+    }
+
+    #navbar2{
+        display: block;
+        position: absolute;
+        right: 1%;
+        text-align: right;
+        top: 1rem;
+    }
+    #navbar2 li{
+        display: inline-block;
+    }
+
+    #navbar2 .user{
+        display: none
+    }
+
+    #navbar2 .dropdown-toggle::after{
+        border:none;
+    }
+
+    #navbar2 .nav-item{
+        line-height: normal;
+        padding: 0 .5rem;
+    }
+    #navbar2 .noty .dot-red{
+        display: none;
+    }
+
+    #navbar2 i{
+        font-size: 1.5rem;
+        color:  #EF3D3D;
+    }
+
+    #navbar3{
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        top:0%;
+        right: 0%;
+        border:none;
+        border-radius: 0;
+        background: transparent;
+        z-index: inherit;
+    }
+
+    #searchbar {
+        min-height: 10rem
+    }
+
+    #searchbar .form select,
+    #searchbar .form input[type=text]{
+        min-width: 8rem;
+        font-size: .9rem;
+    }
+
+    #searchbar .form input[type=text]{
+        padding: .9rem;
+        width: 8rem;
+    }
+
+    #searchbar .form .btn{
+        min-width: 8rem;
+        
+    }
+
+    #calendar .fc-toolbar  .fc-center h2{
+        width: auto;
+        font-size: 1.2rem;
+    }
+
+    #calendar .year{
+        font-size:1.2rem;
+    }
+    #calendar .fc-widget-header{
+        font-size:.8rem;
+    }
+    footer{
+        text-align: center;
+    }
+
+    .footer-nav{
+        display: inline-flex
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .navbar-brand{
+        max-width: 130px;
+        left: 35%;
+    }
+
+    #searchbar{
+        background-color: #FBFBFB;
+    }
+
+    #searchbar .form {
+        display: block;    
+    }
+
+    #searchbar .title-2{
+        font-size: 1.5rem;
+        color:#EF3D3D !important;
+    }
+
+    #searchbar .form input[type=text],
+    #searchbar .form select{
+        border: solid 1px #FCFCFC;
+    }
+
+    #searchbar .form input[type=text],
+    #searchbar .form select,
+    #searchbar .form .btn{
+        width: 43%;
+        min-width: 43%;
+    }
+
+    #searchbar .form .btn{
+        background: #EF3D3D;
+    }
+
+    .border-l,
+    .border-r{
+        border-radius: 0 !important;
+    }
+
+    #calendar .fc-toolbar .fc-center .year,
+    #calendar .fc-toolbar .fc-center h2{
+        font-size:2rem
+    }
+
+    footer .nav-link{
+        padding: 0 .5rem;
+    }
+
+    footer p:first-child{
+        font-size: 0.7rem;
+        margin-bottom: 0;
+    }
+}

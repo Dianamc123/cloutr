@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Welcome - Cloutr</title>
     <!-- fonts open sans  -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <!-- Bootstrap core CSS -->
@@ -14,7 +14,9 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- calendar  -->
-    <link rel="stylesheet" href="pluin/fullcalendar.min.css">
+    <link rel="stylesheet" href="pluin/fullcalendar/fullcalendar.min.css">
+    <!-- timepicker -->
+    <link rel="stylesheet" href="pluin/datepicker/css/bootstrap-datepicker3.min.css">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <!-- responsive design -->
@@ -23,18 +25,25 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-sm pb-3">
+    <nav class="navbar navbar-expand-lg pb-3">
         <div class="container">
             
             <!-- logo  -->
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="/index.html">
                 <img src="img/logo.png" class="img-fluid" alt="">
             </a>
 
+             <!-- pet rey  desktop  -->
+            <div id="pet" data-toggle="popover"  data-placement="right">
+                <img src="img/pet-rey-casco.png" class="img-fluid">
+            </div>
+
             <!-- movil btn  -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            <button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -42,46 +51,107 @@
                 <ul class="navbar-nav ml-auto">
                 
                         <li class="nav-item active align-middle">
-                            <a class="nav-link" href="/">Home</a>
+                            <a class="nav-link" href="/index.html">
+                                Home
+                                <i class="fas fa-home float-right d-lg-none"></i>
+                            </a>
+                           
                         </li>
 
                         <li class="nav-item align-middle">
-                            <a class="nav-link" href="#">My Missions</a>
+                            <a class="nav-link" href="#">
+                                My Missions
+                                <i class="fas fa-rocket float-right d-lg-none"></i>
+                            </a>
+                           
                         </li>
 
                 
                         <li class="nav-item align-middle">
-                            <a href="#" class="nav-link">History</a>
-                        </li>
-
-                        <li class="nav-item dropdown align-middle">
-                                <a href="#" class="nav-link" data-toggle="dropdown">
-                                    Notificactions
-                                    <span class="dot-red"></span>
-                                </a>
-                               
-                        </li>
-
-                        <li class="nav-item align-middle ">
                             <a href="#" class="nav-link">
-                                <i class="fas fa-search user-searc"></i>
+                                History
+                                <i class="fas fa-list float-right d-lg-none"></i>
                             </a>
-                        </li>
-                        <li class="nav-item dropdown align-middle">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> 
-                                <i class="fas fa-user-circle user-icon"></i>
-                                <span class="user">
-                                    Jhon Doe
-                                </span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Ideas</a>
-                                <a href="#" class="dropdown-item">Add</a>
-                            </div>
+                            
                         </li>
                 </ul>
+
+                <div class="version d-lg-none">
+                    <div class="float-right">1.0 Version - Agu 2018</div>
+                </div>
+                
             </div>
 
+
+            <!-- navbar 2  -->
+            <ul id="navbar2" class="navbar-nav ml-auto ">
+                
+                <li class="nav-item dropdown align-middle">
+                        <a href="#" class="nav-link noty" data-toggle="dropdown">
+                            <i class="fas fa-bell d-lg-none"></i>
+                            <span class="text d-none d-lg-block">Notificactions</span>
+                            <span class="dot-red"></span>
+                        </a>
+                       
+                </li>
+
+                <li class="nav-item align-middle ">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-search user-searc"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown align-middle">
+                    <a href="#" class="nav-link dropdown-toggle nav-user"  data-toggle="collapse" data-target="#navbar3" aria-controls="navbarNav"> 
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span class="user">
+                            Jhon Doe
+                        </span>
+                    </a>
+
+                </li>
+            </ul>
+
+            <!-- fixes -->
+            <div class="collapse " id="navbar3">
+                    <!-- nav bar -->
+                     <ul class="navbar-nav ml-auto">
+                     
+                             <li class="nav-item active align-middle">
+                                 <a class="nav-link" href="/index.html">
+                                    View  Profile
+                                    <i class="fas fa-user float-right d-lg-none"></i>
+                                 </a>
+                                
+                             </li>
+     
+                             <li class="nav-item align-middle">
+                                 <a class="nav-link" href="#">
+                                     Paydment Method
+                                     <i class="fas fa-credit-card  float-right d-lg-none"></i>
+                                     
+                                 </a>
+                                
+                             </li>
+
+                             
+                             <li class="nav-item align-middle">
+                                    <a class="nav-link" href="#">
+                                        Settings
+                                        <i class="fas fa-cog float-right d-lg-none"></i>
+                                        
+                                    </a>
+                                   
+                                </li>
+     
+                     
+                           
+                     </ul>
+     
+                     <div class="version d-lg-none">
+                         <div class="float-right">1.0 Version - Agu 2018</div>
+                     </div>
+                     
+                 </div>
         </div>
     </nav>
 
@@ -93,14 +163,12 @@
                     <div class="form  p-3 form-inline">
                             <input type="text" name="" id="" class="border-r form-control-lg" placeholder="ZIP Code" >
 
-                            <select name="" id=""  class="form-control-lg">
+                            <select name="" id=""  class="form-control-lg col-6" >
                                 <option value="">Select Product or Service</option>
                                  <option value="">Select Product or Service</option>
                             </select>
 
-                            <select name="" id="" class="form-control-lg">
-                                <option value="">Select Date</option>
-                            </select>
+                            <input type="text" id="" class="date form-control-lg" placeholder="Select Date">
 
                             <button class="btn  b-ray border-l  btn-lg">
                                 Search
@@ -117,7 +185,7 @@
         <div class="row">
              
             <!-- calendar -->
-            <div class="col-md-4">
+            <div class="col-md-4 calendar">
                 <h4 class="text-left m-3">CALENDAR</h3>
                 
                 <div id='calendar-container rounded'>
@@ -126,13 +194,13 @@
             </div>
 
             <!-- Missions -->
-            <div class="col-md-8">
+            <div class="col-md-8 mission">
                 <h4 class="text-left m-3">ACTIVE MISSION</h3>
 
                 <!-- row 1 -->
                 <div class="row">
                      <!-- item misions  -->
-                     <div class="col-md-4">
+                     <div class="col-6 col-lg-4">
                             <div class="card card-mission rounded">
                                 <div class="cover-container">
                                      <!--im  -->
@@ -159,7 +227,7 @@
                     </div>
 
                    <!-- item misions  -->
-                     <div class="col-md-4">
+                     <div class="col-6 col-lg-4">
                             <div class="card card-mission rounded">
                                <div class="cover-container">
                                      <!--im  -->
@@ -185,7 +253,7 @@
                     </div>
 
                    <!-- item misions  -->
-                     <div class="col-md-4">
+                     <div class="col-6 col-lg-4">
                             <div class="card card-mission rounded">
                                 <div class="cover-container">
                                      <!--im  -->
@@ -211,12 +279,11 @@
                     </div>
                      
 
-                </div>
-                <br>
+    
                 <!-- row 2 -->
-                <div class="row">
+ 
                       <!-- item misions  -->
-                     <div class="col-md-4">
+                     <div class="col-6 col-lg-4">
                             <div class="card card-mission rounded">
                                <div class="cover-container">
                                      <!--im  -->
@@ -242,7 +309,7 @@
                     </div>
    
                       <!-- item misions  -->
-                     <div class="col-md-4">
+                     <div class="col-6 col-lg-4">
                             <div class="card card-mission rounded">
                                 <div class="cover-container">
                                      <!--im  -->
@@ -268,7 +335,7 @@
                     </div>
 
                        <!-- item misions  -->
-                     <div class="col-md-4">
+                     <div class="col-6 col-lg-4">
                             <div class="card card-mission rounded">
                                 <div class="cover-container">
                                      <!--im  -->
@@ -309,21 +376,18 @@
       </div>
 
       
-      <!-- pet rey   -->
-      <div id="pet" data-toggle="popover"  data-placement="top">
-            <img src="img/pet-rey.png" class="img-fluid">
-      </div>
+
     </main><!-- /.container -->
 
     <!-- footer -->
     <footer class="p-3">
         <div class="container">
             <div class="row">
-                    <div class="col-md-6  align-middle">
+                    <div class="col-md-12 col-lg-6  align-middle">
                         <p>Copyright @ 2018 Cloutr. All rights reserved. Web Design by <b>Diana Morales</b></p>
                     </div>
-
-                    <div class="col-md-6">
+                    
+                    <div class="col-md-12 col-lg-6">
                                  <!-- nav bar -->
                                 <ul class="footer-nav nav ml-auto">
                                 
@@ -347,6 +411,8 @@
                                       
                                 </ul>
                     </div>
+
+                    
             </div>
         </div>
         
@@ -359,8 +425,9 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="pluin/moment.min.js"></script>
-    <script src="pluin/fullcalendar.min.js"></script>
+    <script src="pluin/fullcalendar/moment.min.js"></script>
+    <script src="pluin/fullcalendar/fullcalendar.min.js"></script>
+    <script src="pluin/datepicker/js/bootstrap-datepicker.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
