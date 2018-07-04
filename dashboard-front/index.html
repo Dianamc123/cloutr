@@ -163,9 +163,8 @@
                     <div class="form  p-3 form-inline">
                             <input type="text" name="" id="" class="border-r form-control-lg" placeholder="ZIP Code" >
 
-                            <select name="" id=""  class="form-control-lg col-6" >
+                            <select name="" id=""  class="form-control-lg" >
                                 <option value="">Select Product or Service</option>
-                                 <option value="">Select Product or Service</option>
                             </select>
 
                             <input type="text" id="" class="date form-control-lg" placeholder="Select Date">
@@ -182,12 +181,17 @@
 
       <div class="main container p-3">
 
-        <div class="row">
-             
+        <div class="row" style="position: relative;">
+             <!-- movil tabs only sm  -->
+            <ul id="tabs" class="d-none d-block d-md-none">
+                <li> <h4 id="tabs-mission" class="text-center">ACTIVE MISSION</h4></li>
+                <li class="active"> <h4 id="tabs-calendar" class="text-center">CALENDAR</h4></li>
+
+            </ul>
             <!-- calendar -->
             <div class="col-md-4 calendar">
-                <h4 class="text-left m-3">CALENDAR</h3>
-                
+                <h4 class="text-left m-3 d-none d-md-block">CALENDAR</h4>
+            
                 <div id='calendar-container rounded'>
                     <div id="calendar"> </div>
                 </div>
@@ -195,10 +199,11 @@
 
             <!-- Missions -->
             <div class="col-md-8 mission">
-                <h4 class="text-left m-3">ACTIVE MISSION</h3>
+                <h4 class="text-left m-3 d-sm-none d-md-block">ACTIVE MISSION</h4>
+              
 
                 <!-- row 1 -->
-                <div class="row">
+                <div id="tabs-mission"class="row">
                      <!-- item misions  -->
                      <div class="col-6 col-lg-4">
                             <div class="card card-mission rounded">

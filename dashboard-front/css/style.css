@@ -350,3 +350,42 @@ footer div:first-child{
 #calendar .fc-widget-content{
     border-color: #F9F9F9;
 }
+
+#tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+  
+#tabs li {
+    float: left;
+    border-bottom: none;
+    width: 50%;
+    text-align: center;
+    margin-top: -.5rem;
+    padding: 1rem 0;
+  }
+
+#tabs li h4 {
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    padding: .5rem;
+    font-size: 1.2rem;
+  }
+#tabs li.active{
+    border-top: solid 2px #EF3D3C;
+    color: #EF3D3C;
+}
+
+#tabs li.active::before{
+    content: "";
+    position: absolute;
+    top: -.5rem;
+    width: 0;
+    height: 0;
+    border-width: .5rem .5rem 0;
+    border-style: solid;
+    border-color: #ef3d3c transparent transparent;
+}
