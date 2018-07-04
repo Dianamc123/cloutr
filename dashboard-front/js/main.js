@@ -55,4 +55,23 @@ $(document).ready(function(){
             $title.html("<h2><span clas='mes'>"+mes+"</span><br> <span class='year'>"+year+"</span>" );
         }
     });
+
+    // movil tab
+    $("#tabs li").click(function(){
+
+        var _tis = $(this);
+        var _taret = $(_tis.data("target") );
+        var $tabs = _tis.closest("ul");
+
+        $tabs.find("li").not(_tis).each(function(){
+            var taret = $(this).data("target");
+            $(this).removeClass("active");
+            $(taret).fadeOut();
+        });
+
+        _tis.addClass("active");
+        _taret.fadeIn();
+    
+    });
+
 });

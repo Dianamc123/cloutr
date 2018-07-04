@@ -184,26 +184,30 @@
         <div class="row" style="position: relative;">
              <!-- movil tabs only sm  -->
             <ul id="tabs" class="d-none d-block d-md-none">
-                <li> <h4 id="tabs-mission" class="text-center">ACTIVE MISSION</h4></li>
-                <li class="active"> <h4 id="tabs-calendar" class="text-center">CALENDAR</h4></li>
+                <li class="active" data-target="#tabs-mission"> 
+                    <h4  class="text-center" >ACTIVE MISSION</h4>
+                </li>
+                <li  data-target="#calendar-container">
+                    <h4 class="text-center" >CALENDAR</h4>
+                </li>
 
             </ul>
             <!-- calendar -->
-            <div class="col-md-4 calendar">
+            <div class="col-md-4 calendar tab">
                 <h4 class="text-left m-3 d-none d-md-block">CALENDAR</h4>
             
-                <div id='calendar-container rounded'>
+                <div id='calendar-container' class="rounded">
                     <div id="calendar"> </div>
                 </div>
             </div>
 
             <!-- Missions -->
             <div class="col-md-8 mission">
-                <h4 class="text-left m-3 d-sm-none d-md-block">ACTIVE MISSION</h4>
+                <h4 class="text-left m-3 d-none d-md-block">ACTIVE MISSION</h4>
               
 
                 <!-- row 1 -->
-                <div id="tabs-mission"class="row">
+                <div id="tabs-mission" class="row">
                      <!-- item misions  -->
                      <div class="col-6 col-lg-4">
                             <div class="card card-mission rounded">

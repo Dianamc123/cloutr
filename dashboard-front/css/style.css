@@ -372,7 +372,7 @@ footer div:first-child{
     text-decoration: none;
     margin: 0;
     padding: .5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 #tabs li.active{
     border-top: solid 2px #EF3D3C;
@@ -388,4 +388,51 @@ footer div:first-child{
     border-width: .5rem .5rem 0;
     border-style: solid;
     border-color: #ef3d3c transparent transparent;
+}
+
+/* date picker */
+.datepicker .datepicker-switch{
+    color: #454646;
+    text-transform: capitalize;
+}
+
+.datepicker-dropdown{
+    padding: 1rem;
+}
+
+.datepicker table tr td{
+    border:solid 1px #E8E8E8;
+    color: #797979;
+    font-size: .89rem;
+}
+
+.datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active:active
+.datepicker table tr td.active.active.focus, 
+.datepicker table tr td.active.active:focus, 
+.datepicker table tr td.active.active:hover, 
+.datepicker table tr td.active.highlighted.active.focus,
+ .datepicker table tr td.active.highlighted.active:focus, 
+ .datepicker table tr td.active.highlighted.active:hover,
+  .datepicker table tr td.active.highlighted:active.focus, 
+  .datepicker table tr td.active.highlighted:active:focus, 
+  .datepicker table tr td.active.highlighted:active:hover, 
+  .datepicker table tr td.active:active.focus,
+   .datepicker table tr td.active:active:focus, 
+   .datepicker table tr td.active:active:hover{
+    background-color: #EF3D3C;
+    color: #fff;
+    border-color: transparent;
+    border-radius:0;
+}
+
+.datepicker table tr td.new, .datepicker table tr td.old{
+    color: transparent;
+}
+
+.datepicker table tr th{
+    font-weight: 500;
+    color: #454646;
+    text-transform: uppercase;
+    font-size: .89rem;
+
 }

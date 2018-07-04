@@ -191,4 +191,8 @@
         font-size: 0.7rem;
         margin-bottom: 0;
     }
+
+    #calendar-container{
+        display: none;
+    }
 }
