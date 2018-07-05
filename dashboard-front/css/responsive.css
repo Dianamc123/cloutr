@@ -196,3 +196,14 @@
         display: none;
     }
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 425px){
+    #navbar2{
+        top: .5rem;
+    }
+
+    #navbar2 .nav-item{
+        padding: 0 .2rem;
+    }
+}
