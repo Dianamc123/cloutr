@@ -20,19 +20,18 @@ $(document).ready(function(){
 
 
     //  pet tole navbar
-    $('#pet').click(function(){ 
+    $('#pet').mouseenter(function(){ 
       var _tis = $(this);
-      var bottom =  parseInt( _tis.css("bottom") );
+      //var bottom =  parseInt( _tis.css("bottom") );
+       _tis.css("bottom","-1rem");
+       _tis.popover("show");
+     
     
-      if(bottom < 0 )
-      {
-         _tis.css("bottom",0);
-         _tis.popover("show");
-      }else{
+    }).mouseleave(function(){
+        var _tis = $(this);
+
         _tis.popover("hide");
-        _tis.css("bottom","-2rem");
-      }
-    
+        _tis.css("bottom","-3rem");
     });
 
     // 
