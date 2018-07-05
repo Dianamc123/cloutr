@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     // pet dialo
-    $("#pet").popover({
+    $("#pet, #pet2").popover({
         html : true,
         content : "<b>Need some help?</b>"
     });
@@ -11,7 +11,7 @@ $(document).ready(function(){
 
         var _tis = $(this);
         var $collpase = $("[data-toggle=collapse]").not(_tis);
-
+        
         $collpase.each(function(){
             var taret = $(this).data("target");
             $(taret).collapse("hide");
@@ -33,6 +33,8 @@ $(document).ready(function(){
         _tis.popover("hide");
         _tis.css("bottom","-3rem");
     });
+
+
 
     // 
     $(".date").datepicker();
@@ -72,5 +74,14 @@ $(document).ready(function(){
         _taret.fadeIn();
     
     });
+
+
+    // popoover movil
+    $("#navbarNav").on("show.bs.collapse",function(){
+        $(this).find(".pet").popover("show");
+    }).on("hide.bs.collapse",function(){
+        $(this).find(".pet").popover("hide");
+    });
+
 
 });

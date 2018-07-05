@@ -10,6 +10,12 @@
     #pet{
         display: none
     }
+
+    
+    #pet2{
+        display: block;
+        width: 4rem;
+    }
     main .main{
         max-width: 100%;
         border-radius: 0;

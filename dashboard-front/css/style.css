@@ -439,3 +439,7 @@ footer div:first-child{
     font-size: .89rem;
 
 }
+
+#pet2{
+    display: none;
+}
