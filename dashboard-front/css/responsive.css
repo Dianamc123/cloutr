@@ -12,7 +12,7 @@
     }
 
     
-    #pet2{
+    #pet2, #pet3{
         display: block;
         width: 4rem;
     }
@@ -102,25 +102,28 @@
         background: transparent;
         z-index: inherit;
     }
-
+    
     #searchbar {
         min-height: 10rem
     }
 
+    #barsearch-float .form-select,
+    #barsearch-float .form input[type=text],
     #searchbar .form select,
     #searchbar .form input[type=text]{
         min-width: 8rem;
         font-size: .9rem;
     }
 
+    #barsearch-float .form input[type=text],
     #searchbar .form input[type=text]{
         padding: .9rem;
         width: 8rem;
     }
 
+    #barsearch-float .form .btn,
     #searchbar .form .btn{
-        min-width: 8rem;
-        
+        min-width: 8rem
     }
 
     #calendar .fc-toolbar  .fc-center h2{
@@ -150,10 +153,14 @@
         left: 35%;
     }
 
+    #barsearch-float{
+        bottom: -10.5rem;
+    }
     #searchbar{
         background-color: #FBFBFB;
     }
 
+    #barsearch-float .form,
     #searchbar .form {
         display: block;    
     }
@@ -163,11 +170,16 @@
         color:#EF3D3D !important;
     }
 
+    #barsearch-float .form  input[type=text],
+    #barsearch-float .form select,
     #searchbar .form input[type=text],
     #searchbar .form select{
         border: solid 1px #FCFCFC;
     }
 
+    #barsearch-float .form input[type=text],
+    #barsearch-float .form select,
+    #barsearch-float .form .btn,
     #searchbar .form input[type=text],
     #searchbar .form select,
     #searchbar .form .btn{
@@ -187,6 +199,14 @@
     #calendar .fc-toolbar .fc-center .year,
     #calendar .fc-toolbar .fc-center h2{
         font-size:2rem
+    }
+    
+    .back-container.mt-5{
+        margin-top: 1rem !important;
+    } 
+
+    .header-title.mt-5{
+        margin-top: 1rem !important;
     }
 
     footer .nav-link{

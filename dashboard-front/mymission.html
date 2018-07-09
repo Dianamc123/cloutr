@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My Missions - Cloutr</title>
+    <!-- fonts open sans  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- calendar  -->
+    <link rel="stylesheet" href="pluin/fullcalendar/fullcalendar.min.css">
+    <!-- timepicker -->
+    <link rel="stylesheet" href="pluin/datepicker/css/bootstrap-datepicker3.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- responsive design -->
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+
+  <body class="mymission-page">
+
+    <nav class="navbar navbar-expand-lg pb-3">
+        <div class="container" >
+            
+            <!-- logo  -->
+            <a class="navbar-brand" href="/index.html">
+                <img src="img/logo.png" class="img-fluid" alt="">
+            </a>
+
+             <!-- pet rey  desktop  -->
+            <div id="pet" data-toggle="popover"  data-placement="right">
+                <img src="img/pet-rey-casco.png" class="img-fluid">
+            </div>
+
+            <!-- movil btn  -->
+            <button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <!-- nav bar -->
+                <ul class="navbar-nav ml-auto">
+                
+                        <li class="nav-item  align-middle">
+                            <a class="nav-link" href="index.html">
+                                Home
+                                <i class="fas fa-home float-right d-lg-none"></i>
+                            </a>
+                           
+                        </li>
+
+                        <li class="nav-item active align-middle">
+                            <a class="nav-link" href="mymission.html">
+                                My Missions
+                                <i class="fas fa-rocket float-right d-lg-none"></i>
+                            </a>
+                           
+                        </li>
+
+                
+                        <li class="nav-item align-middle">
+                            <a href="#" class="nav-link">
+                                History
+                                <i class="fas fa-list float-right d-lg-none"></i>
+                            </a>
+                            
+                        </li>
+
+                        <li class="nav-item align-middle">
+                              <!-- pet rey  desktop  -->
+                            <div id="pet2" class="pet" data-toggle="popover"  data-placement="right">
+                                <img src="img/pet-rey-casco.png" class="img-fluid">
+                            </div>
+
+                            
+                        </li>
+                </ul>
+
+                <div class="version d-lg-none">
+                    <div class="float-right">1.0 Version - Agu 2018</div>
+                </div>
+                
+            </div>
+
+
+            <!-- navbar 2  -->
+            <ul id="navbar2" class="navbar-nav ml-auto ">
+                
+                <li class="nav-item dropdown align-middle">
+                        <a href="#" class="nav-link noty" data-toggle="dropdown">
+                            <i class="fas fa-bell d-lg-none"></i>
+                            <span class="text d-none d-lg-block">Notificactions</span>
+                            <span class="dot-red"></span>
+                        </a>
+                       
+                </li>
+
+                <li class="nav-item align-middle ">
+                    <a href="#" class="nav-link"  id="btn-search-float">
+                        <i class="fas fa-search user-searc"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown align-middle">
+                    <a href="#" class="nav-link dropdown-toggle nav-user"  data-toggle="collapse" data-target="#navbar3" aria-controls="navbarNav"> 
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span class="user">
+                            Jhon Doe
+                        </span>
+                    </a>
+
+                </li>
+            </ul>
+
+            <!-- fixes -->
+            <div class="collapse " id="navbar3">
+                    <!-- nav bar -->
+                     <ul class="navbar-nav ml-auto">
+                     
+                             <li class="nav-item active align-middle">
+                                 <a class="nav-link" href="/index.html">
+                                    View  Profile
+                                    <i class="fas fa-user float-right d-lg-none"></i>
+                                 </a>
+                                
+                             </li>
+     
+                             <li class="nav-item align-middle">
+                                 <a class="nav-link" href="#">
+                                     Paydment Method
+                                     <i class="fas fa-credit-card  float-right d-lg-none"></i>
+                                     
+                                 </a>
+                                
+                             </li>
+
+                             
+                             <li class="nav-item align-middle">
+                                    <a class="nav-link" href="#">
+                                        Settings
+                                        <i class="fas fa-cog float-right d-lg-none"></i>
+                                        
+                                    </a>
+                                   
+                            </li>
+
+                            
+                        <li class="nav-item align-middle">
+                            <!-- pet rey  desktop  -->
+                          <div id="pet3" class="pet" data-toggle="popover"  data-placement="right">
+                              <img src="img/pet-rey-casco.png" class="img-fluid">
+                          </div>
+
+                          
+                      </li>
+     
+                     
+                           
+                     </ul>
+     
+                     <div class="version d-lg-none">
+                         <div class="float-right">1.0 Version - Agu 2018</div>
+                     </div>
+                     
+            </div>
+
+              <!-- search float -->
+              <div id="barsearch-float" style="display: none;">
+                <!-- select -->
+                <div class="form  p-3 form-inline">
+                        <input type="text" name="" id="" class="border-r form-control-lg" placeholder="ZIP Code" >
+
+                        <select name="" id=""  class="form-control-lg" >
+                            <option value="">Select Product or Service</option>
+                        </select>
+
+                        <input type="text" id="" class="date form-control-lg" placeholder="Select Date">
+
+                        <button class="btn  b-ray border-l  btn-lg">
+                            Search
+                        </button>
+                </div> 
+            </div>
+        </div>
+    </nav>
+     
+
+     <!-- search bar  -->
+     <div id="searchbar2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-12 text-left mt-5 p-3 back-container">
+                        <button class="btn btn-back p-3">
+                            <i class="fas fa-arrow-left icon-rect"></i>
+                            Go to back
+                        </button>
+                    </div>
+
+                    <div class="col-md-5 col-12 text-center mt-5 header-title">
+                       <h1 class="title-2 text-white p-3 ">
+                            My Missions
+                       </h1> 
+                    </div>
+                </div>
+                    
+            </div>
+
+     </div>
+
+    <main role="main"  class="container">
+
+      <div class="main container p-3">
+
+        <div class="row" style="position: relative;">
+            
+            <!-- calendar -->
+            <div class="col-md-4 calendar tab">
+                <h4 class="text-left m-3 d-none d-md-block">CALENDAR</h4>
+            
+                <div id='calendar-container' class="rounded">
+                    <div id="calendar"> </div>
+                </div>
+            </div>
+
+            <!-- Missions -->
+            <div class="col-md-8 mission">
+                <h4 class="text-left m-3 ">MY ACTIVE MISSION</h4>
+              
+                <!-- row 1 -->
+                <div id="tabs-mission" class="my-missions">
+
+                    <div class="col-sm-12">
+
+                        <div class="row">
+                                <div class="col-12 col-md-8">
+                                        <h2 class="title-3">
+                                            <span>
+                                                <img src="img/icons-ray/my-missions.png" alt="" srcset="">
+                                            </span>
+                                            Consumer Goods
+                                            
+                                        </h2>
+                                    </div>
+                                  
+            
+                                    <div class="col-12 col-md-4 p-3">
+                                         <!-- select categories  -->
+                                         <select name="categories" class="selectpicker float-right">
+                                                <option >Select categories</option>
+                                                <option selected data-imagesrc="img/icons-ray/my-missions.png">Consumer Goods</option>                                                
+                                                <option data-imagesrc="img/icons-ray/my-missions-trasn.png">Transportation</option>
+                                                <option data-imagesrc="img/icons-ray/my-missions-service.png">Services</option>
+                                                <option data-imagesrc="img/icons-ray/my-missions-jelwery.png">Jewelry</option>
+                                                <option data-imagesrc="img/icons-ray/my-missions-real.png">Real Estate</option>
+                                                <option data-imagesrc="img/icons-ray/my-missions-misc.png" >Miscelaneous</option>
+                                            </select>
+                                    </div>
+            
+                        </div>
+                      
+                    <!--  table -->
+                    <div class="table-responsive">
+                            <table class="table table-striped table-custom">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">Date of meeting</th>
+                                        <th class="text-center" scope="col">Product</th>
+                                        <th class="text-center" scope="col">Merchant</th>
+                                        <th class="text-center" scope="col">Zip Code</th>
+                                        <th class="text-center" scope="col"># of Crew</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-center" scope="row">02/25/18</th>
+                                        <td class="text-center">Ring</td>
+                                        <td class="text-center">Tiffany's</td>
+                                        <td class="text-center">92122</td>
+                                        <td class="text-center">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" scope="row">03/12/18</th>
+                                        <td class="text-center">Telescope</td>
+                                        <td class="text-center">Tiffany's</td>
+                                        <td class="text-center">92122</td>
+                                        <td class="text-center">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" scope="row">03/12/18</th>
+                                        <td class="text-center">Weeding Dress</td>
+                                        <td class="text-center">Tiffany's</td>
+                                        <td class="text-center">92122</td>
+                                        <td  class="text-center">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" scope="row">15/08/18</th>
+                                        <td class="text-center">Biciclye</td>
+                                        <td class="text-center">Tiffany's</td>
+                                        <td class="text-center">92122</td>
+                                        <td class="text-center">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" scope="row">02/25/18</th>
+                                        <td class="text-center">Ring</td>
+                                        <td class="text-center">Tiffany's</td>
+                                        <td class="text-center">92122</td>
+                                        <td class="text-center">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" scope="row">02/06/18</th>
+                                        <td class="text-center">Camera</td>
+                                        <td class="text-center">Tiffany's</td>
+                                        <td class="text-center">92122</td>
+                                        <td class="text-center">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" scope="row">02/25/18</th>
+                                        <td class="text-center">Ring</td>
+                                        <td class="text-center">Tiffany's</td>
+                                        <td class="text-center">92122</td>
+                                        <td class="text-center">12</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div> <!-- table responsive-->
+                        </div><!-- col -->
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+      
+
+    </main><!-- /.container -->
+
+    <!-- footer -->
+    <footer class="p-3">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-12 col-lg-6  align-middle">
+                        <p>Copyright @ 2018 Cloutr. All rights reserved. Web Design by <b>Diana Morales</b></p>
+                    </div>
+                    
+                    <div class="col-md-12 col-lg-6">
+                                 <!-- nav bar -->
+                                <ul class="footer-nav nav ml-auto">
+                                
+                                        <li class="nav-item active align-middle">
+                                            <a class="nav-link" href="/">About</a>
+                                        </li>
+
+                                        <li class="nav-item align-middle">
+                                            <a class="nav-link" href="#">Support</a>
+                                        </li>
+
+                                
+                                        <li class="nav-item align-middle">
+                                            <a href="#" class="nav-link">Contact</a>
+                                        </li>
+
+                                        <li class="nav-item align-middle">
+                                            <a href="#" class="nav-link">Terms</a>
+                                        </li>
+
+                                      
+                                </ul>
+                    </div>
+
+                    
+            </div>
+        </div>
+        
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="pluin/fullcalendar/moment.min.js"></script>
+    <script src="pluin/fullcalendar/fullcalendar.min.js"></script>
+    <script src="pluin/datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="pluin/ddselect/jquery.ddslick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -45,6 +45,12 @@ a:hover{
     font-weight: 600;
 }
 
+.title-3{
+    font-weight: normal;
+    margin: 1rem;
+    letter-spacing: .1rem;
+}
+
 select {
     outline: none;
     border-radius: 0 !important;
@@ -149,6 +155,7 @@ footer{
 
 
 /*  searc bar */
+#searchbar2,
 #searchbar{
     background-color:#ef3d3c;
     min-height: 15rem;
@@ -156,28 +163,46 @@ footer{
     position: relative;
 }
 
+select.selectpicker{
+    font-size: 1rem;
+    min-width: auto;
+}
+
+#barsearch-float .form,
 #searchbar .form{
     align-items: center;
     justify-content: center;
 }
 
+#barsearch-float .form .btn,
+#barsearch-float .form select,
 #searchbar .form select,
 #searchbar .form .btn{
     margin: .35rem;
     font-size: 1rem;
 }
 
+#barsearch-float .form .btn,
 #searchbar .form .btn{
     min-width: 12rem;
     padding: .75rem 0;
     color:white
 }
+
+#barsearch-float .form input[type=text],
 #searchbar .form input[type=text]{
     outline: none;
     border: 0;
     min-width: 13rem;
     text-align: center;
     border-radius: 0;
+}
+/* float searchbar */
+#barsearch-float{
+    position: absolute;
+    bottom: -5.5rem;
+    right: 0;
+    z-index: 4;
 }
 
 .border-r{
@@ -269,6 +294,7 @@ footer div:first-child{
 
 
 /* calendar style */
+.my-missions,
 #calendar-container{
     height: 29.2rem;
     border-radius: 1rem;
@@ -440,6 +466,142 @@ footer div:first-child{
 
 }
 
-#pet2{
+#pet2,#pet3{
     display: none;
+}
+
+.table-custom,
+.table-custom tbody td{
+    border:solid 1px #FAFAFA;
+    color:#282828;
+    font-size: .89rem;
+}
+
+.table-custom thead th{
+    border: none;
+    border-bottom:solid 1px #FAFAFA;
+    font-weight: 400;
+    color: #7f7f7f;
+}
+
+.table-custom  tbody tr:hover{
+    border-left: solid .5rem #F1585A;
+}
+
+.table-custom tbody tr:nth-of-type(odd){
+    background: #FCFCFC;
+}
+
+.btn-back{
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: 700;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.btn-back .icon-rect{
+    padding: 0.5rem;
+    border:solid 1px #fff !important;
+    border-radius: .2rem;
+    box-shadow: none;
+}
+
+/* select  */
+.dd-select{
+    border-radius:2px;
+    /* border:solid 1px #ccc; */
+    position:relative;
+    cursor:pointer;
+}
+.dd-desc {
+    color:#aaa;
+    display:block;
+    overflow: hidden;
+    font-weight:normal;
+    line-height: 1.4em;
+}
+.dd-selected{
+    overflow:hidden;
+    display:block;
+    padding:10px;
+    font-weight:normal;
+}
+
+.dd-container .dd-selected .dd-selected-text,
+.dd-option-text{
+    font-weight:normal;
+    line-height: 1rem !important;
+}
+.dd-pointer{
+    width:0;
+    height:0;
+    position:absolute;
+    right:10px;
+    top:50%;
+    margin-top:-3px;
+}
+.dd-pointer-down{
+    border:solid 5px transparent;
+    border-top:solid 5px#BABABA;
+}
+.dd-pointer-up{
+   border:solid 5px transparent !important;
+    border-bottom:solid 5px#BABABA !important;
+    margin-top:-8px;
+}
+.dd-options{
+    /* border:solid 1px #ccc; */
+    border-top:none;
+    list-style:none;
+    box-shadow:0px 1px 5px #F7F7F7;
+    display:none;
+    position:absolute;
+    z-index:2000;
+    margin:0;
+    padding:0;
+   background:#fff;
+    overflow:auto;
+}
+.dd-option{
+    padding:10px;
+    display:block;
+    /* border-bottom:solid 1px #ddd; */
+    overflow:hidden;
+    text-decoration:none;
+    color:#333;
+    cursor:pointer;
+   -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+   -o-transition: all 0.25s ease-in-out;
+   -ms-transition: all 0.25s ease-in-out;
+}
+.dd-options > li:last-child > .dd-option{
+    border-bottom:none;
+}
+.dd-option:hover{
+    background:#f3f3f3;
+    color:#000;
+}
+.dd-selected-description-truncated {
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+.dd-option-selected {
+    background:#FCFCFC;
+}
+.dd-option-image, .dd-selected-image {
+    vertical-align:middle;
+    float:left;
+    margin-right:5px;
+    max-width:32px;
+}
+.dd-image-right {
+    float:right;
+    margin-right:15px;
+    margin-left:5px;
+}
+.dd-container{
+    position:relative;
 }

@@ -1,9 +1,16 @@
 $(document).ready(function(){
 
     // pet dialo
-    $("#pet, #pet2").popover({
+    $("#pet, #pet2 , #pet3").popover({
         html : true,
         content : "<b>Need some help?</b>"
+    });
+
+    // barsearch float
+    $("#btn-search-float").click(function(e){
+        e.preventDefault();
+
+        $("#barsearch-float").toggle();
     });
 
     //  collapse oters list
@@ -40,12 +47,67 @@ $(document).ready(function(){
     $(".date").datepicker();
     // calendar 
     $("#calendar").fullCalendar({
+        events:  [
+            /*{
+               "title":"Long Event",
+               "start":"2018-07-07",
+               "end":"2018-07-10"
+            },
+            {
+               "id":999,
+               "title":"Repeating Event",
+               "start":"2018-07-09T16:00:00+00:00"
+            },
+            {
+               "id":999,
+               "title":"Repeating Event",
+               "start":"2018-07-16T16:00:00+00:00"
+            },
+            {
+               "title":"Conference",
+               "start":"2018-07-07",
+               "end":"2018-07-09"
+            },
+            {
+               "title":"Meeting",
+               "start":"2018-07-08T10:30:00+00:00",
+               "end":"2018-07-08T12:30:00+00:00"
+            },
+            {
+               "title":"Lunch",
+               "start":"2018-07-08T12:00:00+00:00"
+            },
+            {
+               "title":"Birthday Party",
+               "start":"2018-07-09T07:00:00+00:00"
+            },
+            {
+               "title":"Click for Google",
+               "start":"2018-07-28"
+            },
+            {
+               "title":"Meeting",
+               "start":"2018-07-08T14:30:00+00:00"
+            },
+            {
+               "title":"Happy Hour",
+               "start":"2018-07-08T17:30:00+00:00"
+            },
+            {
+               "title":"Dinner",
+               "start":"2018-07-08T20:00:00+00:00"
+            }*/
+         ],
         height: 'parent',
         contentHeight: "auto",
          header: {
             left: 'prev',
             center: 'title',
             right: 'next'
+        },
+        eventLimit: 1,
+        eventLimitText: function(number){
+            return number
         },
         showNonCurrentDates :false,
         viewRender :function(view, element){
@@ -77,11 +139,19 @@ $(document).ready(function(){
 
 
     // popoover movil
-    $("#navbarNav").on("show.bs.collapse",function(){
+    $("#navbarNav, #navbar3").on("show.bs.collapse",function(){
         $(this).find(".pet").popover("show");
     }).on("hide.bs.collapse",function(){
         $(this).find(".pet").popover("hide");
     });
+
+    // active select bootstrap picker
+    if( $.fn.ddslick )
+        $('select.selectpicker').ddslick({
+            background: "#FCFCFC",
+            embedCSS: false,
+            width: '100%'
+        });
 
 
 });
