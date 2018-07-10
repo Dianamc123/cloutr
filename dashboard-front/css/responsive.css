@@ -221,6 +221,10 @@
     #calendar-container{
         display: none;
     }
+
+    .title-3{
+        font-size:1.6rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */

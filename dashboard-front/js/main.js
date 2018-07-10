@@ -48,7 +48,7 @@ $(document).ready(function(){
     // calendar 
     $("#calendar").fullCalendar({
         events:  [
-            /*{
+            {
                "title":"Long Event",
                "start":"2018-07-07",
                "end":"2018-07-10"
@@ -96,7 +96,7 @@ $(document).ready(function(){
             {
                "title":"Dinner",
                "start":"2018-07-08T20:00:00+00:00"
-            }*/
+            }
          ],
         height: 'parent',
         contentHeight: "auto",

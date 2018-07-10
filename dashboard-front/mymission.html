@@ -221,6 +221,17 @@
 
         <div class="row" style="position: relative;">
             
+             <!-- movil tabs only sm  -->
+             <ul id="tabs" class="d-none d-block d-md-none">
+                <li class="active" data-target="#tabs-mission"> 
+                    <h4  class="text-center">MY MISSION</h4>
+                </li>
+                <li  data-target="#calendar-container">
+                    <h4 class="text-center" >CALENDAR</h4>
+                </li>
+
+            </ul>
+
             <!-- calendar -->
             <div class="col-md-4 calendar tab">
                 <h4 class="text-left m-3 d-none d-md-block">CALENDAR</h4>
@@ -232,7 +243,7 @@
 
             <!-- Missions -->
             <div class="col-md-8 mission">
-                <h4 class="text-left m-3 ">MY ACTIVE MISSION</h4>
+                <h4 class="text-left m-3  d-none d-md-block">MY ACTIVE MISSION</h4>
               
                 <!-- row 1 -->
                 <div id="tabs-mission" class="my-missions">
