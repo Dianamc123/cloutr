@@ -379,6 +379,14 @@ footer div:first-child{
 #calendar .fc-widget-content{
     border-color: #F9F9F9;
 }
+#calendar .fc-event-container{
+    position: relative;
+}
+
+#calendar  .fc-event-container .dot-red{
+    top: -2rem;
+    right: .6rem;
+}
 
 #tabs {
     margin: 0;

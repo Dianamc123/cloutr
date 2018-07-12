@@ -1,3 +1,55 @@
+// vars
+var $events = [
+{
+    "title":"Long Event",
+    "start":"2018-07-23T16:41:00+00:00",
+ },
+ {
+    "id":999,
+    "title":"Repeating Event",
+    "start":"2018-07-23T16:30:00+00:00"
+ },
+ {
+    "id":999,
+    "title":"Repeating Event 2",
+    "start":"2018-07-21T16:20:00+00:00"
+ },
+ {
+    "title":"Conference",
+    "start":"2018-07-21T13:10:00+00:00",
+ },
+ {
+    "title":"Meeting",
+    "start":"2018-07-23T10:30:00+00:00",
+ },
+ {
+    "title":"Lunch",
+    "start":"2018-07-24T12:00:00+00:00"
+ },
+ {
+    "title":"Birthday Party",
+    "start":"2018-07-24T07:00:00+00:00"
+ },
+ {
+    "title":"Click for Google",
+    "start":"2018-07-28"
+ },
+ {
+    "title":"Meeting",
+    "start":"2018-07-08T14:30:00+00:00"
+ },
+ {
+    "title":"Happy Hour",
+    "start":"2018-07-08T17:30:00+00:00"
+ },
+ {
+    "title":"Dinner",
+    "start":"2018-07-08T20:00:00+00:00"
+ }
+];
+var StoreEvents = {}
+
+
 $(document).ready(function(){
 
     // pet dialo
@@ -47,57 +99,7 @@ $(document).ready(function(){
     $(".date").datepicker();
     // calendar 
     $("#calendar").fullCalendar({
-        events:  [
-            {
-               "title":"Long Event",
-               "start":"2018-07-07",
-               "end":"2018-07-10"
-            },
-            {
-               "id":999,
-               "title":"Repeating Event",
-               "start":"2018-07-09T16:00:00+00:00"
-            },
-            {
-               "id":999,
-               "title":"Repeating Event",
-               "start":"2018-07-16T16:00:00+00:00"
-            },
-            {
-               "title":"Conference",
-               "start":"2018-07-07",
-               "end":"2018-07-09"
-            },
-            {
-               "title":"Meeting",
-               "start":"2018-07-08T10:30:00+00:00",
-               "end":"2018-07-08T12:30:00+00:00"
-            },
-            {
-               "title":"Lunch",
-               "start":"2018-07-08T12:00:00+00:00"
-            },
-            {
-               "title":"Birthday Party",
-               "start":"2018-07-09T07:00:00+00:00"
-            },
-            {
-               "title":"Click for Google",
-               "start":"2018-07-28"
-            },
-            {
-               "title":"Meeting",
-               "start":"2018-07-08T14:30:00+00:00"
-            },
-            {
-               "title":"Happy Hour",
-               "start":"2018-07-08T17:30:00+00:00"
-            },
-            {
-               "title":"Dinner",
-               "start":"2018-07-08T20:00:00+00:00"
-            }
-         ],
+        events: $events,
         height: 'parent',
         contentHeight: "auto",
          header: {
@@ -105,17 +107,69 @@ $(document).ready(function(){
             center: 'title',
             right: 'next'
         },
-        eventLimit: 1,
-        eventLimitText: function(number){
-            return number
-        },
         showNonCurrentDates :false,
+        eventAfterRender: function(event, element){
+            var $out = false;
+            var day = event.start.format("DDD");
+            var index =  event.start.format("Hmm");
+            var td = element.closest(".fc-event-container");
+
+            // if not exist in storeEvents return a do red
+            if( !StoreEvents.hasOwnProperty( day ) ){
+                // set the day 
+                StoreEvents[ day ] = {};
+                td.html( "<span class='dot-red'></span>");
+                $out = true;
+            }
+                
+            //check the index
+            if( !StoreEvents[ day ].hasOwnProperty( index ) ){
+                StoreEvents[day][index] = {};
+            }
+
+            // store the event in memory 
+            StoreEvents[day][index] = event;
+            
+            if( !$out )
+                element.replaceWith("<td></td>");
+        },
         viewRender :function(view, element){
             var mes = view.start.format("MMMM");
             var year = view.start.format("Y");
             var $title = $("#calendar .fc-toolbar .fc-center");
             /// reasin title calendar
             $title.html("<h2><span clas='mes'>"+mes+"</span><br> <span class='year'>"+year+"</span>" );
+        },
+        dayClick: function( date, jsEvent, view ){
+
+            var day = date.format("DDD");
+            var $m = $("#CalendarModal");
+            var $date = date.format("DD MMMM YYYY");
+            var $modalbody = $m.find(".modal-body");
+            var $modaltitle = $m.find(".modal-title");
+
+            $modalbody.empty();
+
+
+            //-- verify the events in the day
+            if( StoreEvents.hasOwnProperty( day ) )
+            {
+                var $list = StoreEvents[day];
+
+                $.each($list,function(index,event){
+                    $modalbody.append("<p>"+event.start.format("HH:mm")+" : "+event.title+"</p>")
+                });
+               
+            }else{
+                $modalbody.append("<p>No events today</p>");
+            }
+
+             //-- search the title
+             $modaltitle.text( $date );
+
+             //-show modal
+             $m.modal("show");
+            
         }
     });
 
