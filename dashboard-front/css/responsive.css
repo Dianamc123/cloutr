@@ -24,7 +24,7 @@
     .navbar-brand{
         position: absolute;
         left: 39%;
-        top:.5rem;
+        top:.25rem;
         max-width: 150px;
     }
     .navbar-toggler{
@@ -126,13 +126,17 @@
         min-width: 8rem
     }
 
+    #calendar-container{
+        display: none;
+    }
+
     #calendar .fc-toolbar  .fc-center h2{
         width: auto;
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     #calendar .year{
-        font-size:1.2rem;
+        font-size:1.5rem;
     }
     #calendar .fc-widget-header{
         font-size:.8rem;
@@ -150,7 +154,8 @@
 @media (max-width: 576px) {
     .navbar-brand{
         max-width: 130px;
-        left: 35%;
+        left: 40%;
+        top: -.5rem;
     }
 
     #barsearch-float{

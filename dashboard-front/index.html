@@ -30,7 +30,8 @@
             
             <!-- logo  -->
             <a class="navbar-brand" href="/index.html">
-                <img src="img/logo.png" class="img-fluid" alt="">
+                <img src="img/logo.png" class="img-fluid d-none d-md-block" alt="">
+                <img src="img/logo-mobile.png" class="img-fluid d-md-none d-block" alt="">
             </a>
 
              <!-- pet rey  desktop  -->
@@ -75,7 +76,7 @@
                             
                         </li>
 
-                        <li class="nav-item align-middle">
+                        <li class="nav-item align-middle d-lg-none">
                               <!-- pet rey  desktop  -->
                             <div id="pet2" class="pet" data-toggle="popover"  data-placement="right">
                                 <img src="img/pet-rey-casco.png" class="img-fluid">
@@ -199,11 +200,12 @@
                     <h2 class="title-2 text-white p-3 ">Search for misions to join!</h2>
                     <!-- select -->
                     <div class="form  p-3 form-inline">
-                            <input type="text" name="" id="" class="border-r form-control-lg" placeholder="ZIP Code" >
 
-                            <select name="" id=""  class="form-control-lg" >
+                            <select name="" id=""  class="form-control-lg border-r" >
                                 <option value="">Select Product or Service</option>
                             </select>
+
+                            <input type="text" name="" id="" class="form-control-lg" placeholder="ZIP Code" >
 
                             <input type="text" id="" class="date form-control-lg" placeholder="Select Date">
 
@@ -221,7 +223,7 @@
 
         <div class="row" style="position: relative;">
              <!-- movil tabs only sm  -->
-            <ul id="tabs" class="d-none d-block d-md-none">
+            <ul id="tabs" class="d-none d-block d-lg-none">
                 <li class="active" data-target="#tabs-mission"> 
                     <h4  class="text-center" >ACTIVE MISSION</h4>
                 </li>
@@ -231,8 +233,8 @@
 
             </ul>
             <!-- calendar -->
-            <div class="col-md-4 calendar tab">
-                <h4 class="text-left m-3 d-none d-md-block">CALENDAR</h4>
+            <div class="col-md-12 col-lg-4 calendar tab">
+                <h4 class="text-left m-3 d-none d-md-none d-lg-block">CALENDAR</h4>
             
                 <div id='calendar-container' class="rounded">
                     <div id="calendar"> </div>
@@ -240,15 +242,15 @@
             </div>
 
             <!-- Missions -->
-            <div class="col-md-8 mission">
-                <h4 class="text-left m-3 d-none d-md-block">ACTIVE MISSION</h4>
+            <div class="col-md-12 col-lg-8 mission">
+                <h4 class="text-left m-3 d-none d-md-none d-lg-block">ACTIVE MISSION</h4>
               
 
                 <!-- row 1 -->
                 <div id="tabs-mission" class="row">
                      <!-- item misions  -->
                      <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded">
+                            <div class="card card-mission rounded2">
                                 <div class="cover-container">
                                      <!--im  -->
                                      <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
@@ -275,7 +277,7 @@
 
                    <!-- item misions  -->
                      <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded">
+                            <div class="card card-mission rounded2">
                                <div class="cover-container">
                                      <!--im  -->
                                      <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
@@ -301,7 +303,7 @@
 
                    <!-- item misions  -->
                      <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded">
+                            <div class="card card-mission rounded2">
                                 <div class="cover-container">
                                      <!--im  -->
                                      <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
@@ -331,7 +333,7 @@
  
                       <!-- item misions  -->
                      <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded">
+                            <div class="card card-mission rounded2">
                                <div class="cover-container">
                                      <!--im  -->
                                      <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
@@ -357,7 +359,7 @@
    
                       <!-- item misions  -->
                      <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded">
+                            <div class="card card-mission rounded2">
                                 <div class="cover-container">
                                      <!--im  -->
                                      <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
@@ -383,7 +385,7 @@
 
                        <!-- item misions  -->
                      <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded">
+                            <div class="card card-mission rounded2">
                                 <div class="cover-container">
                                      <!--im  -->
                                      <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
@@ -431,7 +433,7 @@
         <div class="container">
             <div class="row">
                     <div class="col-md-12 col-lg-6  align-middle">
-                        <p>Copyright @ 2018 Cloutr. All rights reserved. Web Design by <b>Diana Morales</b></p>
+                        <p>Copyright @ 2018 Cloutr. All rights reserved. Web Design by <b><a href="http://www.moralesdesigner.com" target="_blank">Diana Morales</a></b></p>
                     </div>
                     
                     <div class="col-md-12 col-lg-6">

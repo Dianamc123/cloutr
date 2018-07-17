@@ -193,10 +193,17 @@ $(document).ready(function(){
 
 
     // popoover movil
-    $("#navbarNav, #navbar3").on("show.bs.collapse",function(){
-        $(this).find(".pet").popover("show");
-    }).on("hide.bs.collapse",function(){
-        $(this).find(".pet").popover("hide");
+    $(window).on("rezise load",function(){
+        
+       if( viewport() <= 768 )
+            $("#navbarNav, #navbar3").on("show.bs.collapse",function(){
+                $(this).find(".pet").popover("show");
+            }).on("hide.bs.collapse",function(){
+                $(this).find(".pet").popover("hide");
+            });
+        else
+            $("#navbarNav, #navbar3").off("show.bs.collapse hide.bs.collapse");
+        
     });
 
     // active select bootstrap picker
@@ -209,3 +216,8 @@ $(document).ready(function(){
 
 
 });
+
+//--screen width 
+function viewport(){
+    return $(window).width();
+}

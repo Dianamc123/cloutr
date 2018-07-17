@@ -73,10 +73,26 @@ select {
     position: absolute;
 }
 
+.rounded2{
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    border-radius: .3rem;
+}
+
+.rounded2 > .cover-container,
+.rounded2  .cover{
+    -webkit-border-top-left-radius: .3rem;
+    -webkit-border-top-right-radius: .3rem;
+    -moz-border-radius-topleft: .3rem;
+    -moz-border-radius-topright: .3rem;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
 .main{
-     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.53);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.53);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.53);
+     -webkit-box-shadow: 0px 0px 5px 0px #0000001c;
+    -moz-box-shadow: 0px 0px 5px 0px #0000001c;
+    box-shadow: 0px 0px 5px 0px #0000001c;
 }
 
 /* nav  */
@@ -121,6 +137,9 @@ footer{
 .nav-item .user-searc{
     font-size:1.3rem
 }
+#navbar3 .nav-link .fas{
+    margin-top: 1rem;
+}
 
 .version{
     background-color: #FCFCFC;
@@ -141,8 +160,8 @@ footer{
     position: absolute;
     z-index:4;
     background-color: #fff;
-    right: 10%;
-    top : 65%;
+    right: 0%;
+    top : 75%;
     border-radius: 1rem;
     border: solid 1px #F3F3F3;
 }
@@ -229,9 +248,9 @@ select.selectpicker{
 /* card mision  */
 
 .card-mission{
-     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.53);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.53);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.33);
+     -webkit-box-shadow: 0px 0px 5px 0px#0000001c;
+    -moz-box-shadow: 0px 0px 5px 0px #0000001c;
+    box-shadow: 0px 0px 5px 0px #0000001c;
     margin-bottom: 1rem;
 }
 
@@ -298,9 +317,9 @@ footer div:first-child{
 #calendar-container{
     height: 29.2rem;
     border-radius: 1rem;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 5px 0px #0000001c;
+    -moz-box-shadow: 0px 0px 5px 0px #0000001c;
+    box-shadow: 0px 0px 5px 0px #0000001c;
 }
 
 #calendar .fc-month-view .fc-body .fc-row{
