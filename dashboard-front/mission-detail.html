@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Welcome - Cloutr</title>
+    <title>Mision Detail - Cloutr</title>
     <!-- fonts open sans  -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <!-- Bootstrap core CSS -->
@@ -51,7 +51,7 @@
                <!-- nav bar -->
                 <ul class="navbar-nav ml-auto">
                 
-                        <li class="nav-item active align-middle">
+                        <li class="nav-item align-middle">
                             <a class="nav-link" href="/index.html">
                                 Home
                                 <i class="fas fa-home float-right d-lg-none"></i>
@@ -59,7 +59,7 @@
                            
                         </li>
 
-                        <li class="nav-item align-middle">
+                        <li class="nav-item active align-middle">
                             <a class="nav-link" href="mymission.html">
                                 My Missions
                                 <i class="fas fa-rocket float-right d-lg-none"></i>
@@ -136,7 +136,7 @@
      
                              <li class="nav-item align-middle">
                                  <a class="nav-link" href="#">
-                                     Paydment Method
+                                     Payment Method
                                      <i class="fas fa-credit-card  float-right d-lg-none"></i>
                                      
                                  </a>
@@ -195,27 +195,26 @@
     </nav>
 
      <!-- search bar  -->
-     <div id="searchbar">
-            <div class="container text-center">
-                    <h2 class="title-2 text-white pt-3 ">Search for misions to join!</h2>
-                    <!-- select -->
-                    <div class="form  p-3 form-inline">
+     <div id="searchbar2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12 text-left mt-5 p-3 back-container">
+                    <button class="btn btn-back p-3" onclick=" window.history.back();">
+                        <i class="fas fa-arrow-left icon-rect"></i>
+                        Go to back
+                    </button>
+                </div>
 
-                            <select name="" id=""  class="form-control-lg border-r" >
-                                <option value="">Select Product or Service</option>
-                            </select>
-
-                            <input type="text" name="" id="" class="form-control-lg" placeholder="ZIP Code" >
-
-                            <input type="text" id="" class="date form-control-lg" placeholder="Select Date">
-
-                            <button class="btn  b-ray border-l  btn-lg">
-                                Search
-                            </button>
-                    </div>
+                <div class="col-md-5 col-12 text-center mt-5 header-title">
+                   <h1 class="title-2 text-white p-3 ">
+                        Mission Detail
+                   </h1> 
+                </div>
             </div>
+                
+        </div>
 
-     </div>
+ </div>
 
     <main role="main"  class="container">
 
@@ -225,7 +224,7 @@
              <!-- movil tabs only sm  -->
             <ul id="tabs" class="d-none d-block d-lg-none">
                 <li class="active" data-target="#tabs-mission"> 
-                    <h4  class="text-center" >ACTIVE MISSION</h4>
+                    <h4  class="text-center" >MISSION DETAIL</h4>
                 </li>
                 <li  data-target="#calendar-container">
                     <h4 class="text-center" >CALENDAR</h4>
@@ -245,180 +244,6 @@
             <div class="col-md-12 col-lg-8 mission">
                 <h4 class="text-left m-3 d-none d-md-none d-lg-block">ACTIVE MISSION</h4>
               
-
-                <!-- row 1 -->
-                <div id="tabs-mission" class="row">
-                     <!-- item misions  -->
-                     <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded2">
-                                <div class="cover-container">
-                                     <!--im  -->
-                                     <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
-                                      
-                                     <!--cover div  -->
-                                     <div class="cover"></div>
-
-                                     <!-- cover text  -->
-                                     <div class="cover-text text-center">
-                                         <img src="img/service-trans.png" alt="">
-                                         <p>TRANSPORTATION</p>
-                                     </div>
-                                </div>
-
-                               <div class="card-title text-center">
-                                   <a href="#" class="btn btn-link ">
-                                       <h5 class="">
-                                            Missions  <span class="badge badge-secondary b-red">5</span>
-                                       </h5>
-                                    </a>
-                               </div>
-                           </div>
-                    </div>
-
-                   <!-- item misions  -->
-                     <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded2">
-                               <div class="cover-container">
-                                     <!--im  -->
-                                     <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
-                                      
-                                     <!--cover div  -->
-                                     <div class="cover"></div>
-
-                                     <!-- cover text  -->
-                                     <div class="cover-text text-center">
-                                         <img src="img/service-serv.png" alt="">
-                                         <p>SERVICES</p>
-                                     </div>
-                                </div>
-                               <div class="card-title text-center">
-                                   <a href="#" class="btn btn-link ">
-                                       <h5 class="">
-                                            Missions  <span class="badge badge-secondary b-red">5</span>
-                                       </h5>
-                                    </a>
-                               </div>
-                           </div>
-                    </div>
-
-                   <!-- item misions  -->
-                     <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded2">
-                                <div class="cover-container">
-                                     <!--im  -->
-                                     <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
-                                      
-                                     <!--cover div  -->
-                                     <div class="cover"></div>
-
-                                     <!-- cover text  -->
-                                     <div class="cover-text text-center">
-                                         <img src="img/service-cust.png" alt="">
-                                         <p>CONSUMER GOODS</p>
-                                     </div>
-                                </div>
-                               <div class="card-title text-center">
-                                   <a href="#" class="btn btn-link ">
-                                       <h5 class="">
-                                            Missions  <span class="badge badge-secondary b-red">5</span>
-                                       </h5>
-                                    </a>
-                               </div>
-                           </div>
-                    </div>
-                     
-
-    
-                <!-- row 2 -->
- 
-                      <!-- item misions  -->
-                     <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded2">
-                               <div class="cover-container">
-                                     <!--im  -->
-                                     <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
-                                      
-                                     <!--cover div  -->
-                                     <div class="cover"></div>
-
-                                     <!-- cover text  -->
-                                     <div class="cover-text text-center">
-                                         <img src="img/service-jelw.png" alt="">
-                                         <p>JEWELRY</p>
-                                     </div>
-                                </div>
-                               <div class="card-title text-center">
-                                   <a href="#" class="btn btn-link ">
-                                       <h5 class="">
-                                            Missions  <span class="badge badge-secondary b-red">5</span>
-                                       </h5>
-                                    </a>
-                               </div>
-                           </div>
-                    </div>
-   
-                      <!-- item misions  -->
-                     <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded2">
-                                <div class="cover-container">
-                                     <!--im  -->
-                                     <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
-                                      
-                                     <!--cover div  -->
-                                     <div class="cover"></div>
-
-                                     <!-- cover text  -->
-                                     <div class="cover-text text-center">
-                                         <img src="img/service-real.png" alt="">
-                                         <p>REAL STATE</p>
-                                     </div>
-                                </div>
-                               <div class="card-title text-center">
-                                   <a href="#" class="btn btn-link ">
-                                       <h5 class="">
-                                            Missions  <span class="badge badge-secondary b-red">5</span>
-                                       </h5>
-                                    </a>
-                               </div>
-                           </div>
-                    </div>
-
-                       <!-- item misions  -->
-                     <div class="col-6 col-lg-4">
-                            <div class="card card-mission rounded2">
-                                <div class="cover-container">
-                                     <!--im  -->
-                                     <img class="card-img-top" src="https://www.coches.com/fotos_historicas/ford/Mustang-5.0-GT-Convertible-2012/ford_mustang-5-0-gt-convertible-2012_r4.jpg" alt="Card image cap">
-                                      
-                                     <!--cover div  -->
-                                     <div class="cover"></div>
-
-                                     <!-- cover text  -->
-                                     <div class="cover-text text-center">
-                                         <img src="img/service-misc.png" alt="">
-                                         <p>MISCELLANEOUS</p>
-                                     </div>
-                                </div>
-                               <div class="card-title text-center">
-                                   <a href="#" class="btn btn-link ">
-                                       <h5 class="">
-                                            Missions  <span class="badge badge-secondary b-red">5</span>
-                                       </h5>
-                                    </a>
-                               </div>
-                           </div>
-                    </div>
-                        
-   
-                </div>
-                <br>
-                <!-- news mission -->
-                <div class="text-center">
-                    <button class="btn btn-lg b-red text-white">
-                         Create a new mission
-                    </button>
-                </div>
-
             </div>
 
         </div>

@@ -42,13 +42,15 @@ a:hover{
 
 /*  miscel */
 .title-2{
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .title-3{
     font-weight: normal;
     margin: 1rem;
     letter-spacing: .1rem;
+    margin-top: 1.5rem;
+
 }
 
 select {
@@ -177,7 +179,7 @@ footer{
 #searchbar2,
 #searchbar{
     background-color:#ef3d3c;
-    min-height: 15rem;
+    min-height: 14rem;
     z-index: 3;
     position: relative;
 }
@@ -193,12 +195,63 @@ select.selectpicker{
     justify-content: center;
 }
 
+#barsearch-float .form input[type=text],
+#barsearch-float .form select,
+#barsearch-float .form .btn,
+#searchbar .form input[type=text],
+#searchbar .form select,
+#searchbar .form .btn{
+    height: 2.8rem;
+    width: 10rem;
+    font-size: .95rem;
+}
+
+#barsearch-float .form input[type=text]:nth-child(2),
+#searchbar .form input[type=text]:nth-child(2){
+    margin: .5rem;
+}
+#barsearch-float .form input[type=text]:nth-child(3),
+#searchbar .form input[type=text]:nth-child(3){
+    margin-right: .5rem;
+}
+
+#barsearch-float input:focus:-ms-input-placeholder{
+    color: rgba(0, 0, 0, 0.1)
+}
+
+#barsearch-float input:focus::-moz-placeholder{
+    color: rgba(0, 0, 0, 0.1)
+}
+
+#barsearch-float input:focus::-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.1)
+}
+
+#searchbar input:focus:-ms-input-placeholder{
+    color: rgba(0, 0, 0, 0.1)
+}
+
+#searchbar input:focus::-moz-placeholder{
+    color: rgba(0, 0, 0, 0.1)
+}
+
+#searchbar input:focus::-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.1)
+}
+#searchbar input[type=text]:focus{
+    text-align: left;
+}
+
 #barsearch-float .form .btn,
 #barsearch-float .form select,
 #searchbar .form select,
 #searchbar .form .btn{
-    margin: .35rem;
     font-size: 1rem;
+    box-sizing: border-box;
+}
+#barsearch-float .form select,
+#searchbar .form select:focus{
+    color: rgba(0, 0, 0, 0.1)
 }
 
 #barsearch-float .form .btn,
@@ -236,7 +289,7 @@ select.selectpicker{
 .main{
     background-color: white;
     position: relative;
-    margin-top: -1.5rem;
+    margin-top: -4rem;
     -webkit-border-radius: 1rem 1rem 0 0;
     -moz-border-radius:  1rem 1rem 0 0;
     border-radius:  1rem 1rem 0 0;
@@ -252,6 +305,9 @@ select.selectpicker{
     -moz-box-shadow: 0px 0px 5px 0px #0000001c;
     box-shadow: 0px 0px 5px 0px #0000001c;
     margin-bottom: 1rem;
+}
+.card-mission .card-title{
+    margin-bottom: 0;
 }
 
 .card-mission .cover-container{
@@ -502,6 +558,7 @@ footer div:first-child{
     border:solid 1px #FAFAFA;
     color:#282828;
     font-size: .89rem;
+    cursor: pointer;
 }
 
 .table-custom thead th{
@@ -512,7 +569,7 @@ footer div:first-child{
 }
 
 .table-custom  tbody tr:hover{
-    border-left: solid .5rem #F1585A;
+    border-left: solid .2rem #F1585A;
 }
 
 .table-custom tbody tr:nth-of-type(odd){
@@ -526,6 +583,11 @@ footer div:first-child{
     font-weight: 700;
     outline: none;
     font-size: 1.2rem;
+    box-shadow: none;
+}
+
+.btn-back:focus{
+    box-shadow: none;
 }
 
 .btn-back .icon-rect{

@@ -230,6 +230,28 @@
     .title-3{
         font-size:1.6rem;
     }
+
+    .col-mv-container{
+        position: relative;
+    }
+
+    .col-mv-scroll{
+        margin-left: calc(100% - 12rem);
+        overflow-x: scroll;
+        overflow-y: visible;
+        padding-bottom: 5px;
+        width: calc(100% - 12rem);
+    }
+
+    .col-mv-stick{
+        left: 0;
+        position: absolute;
+        top: auto;
+        width: 12rem;
+    }
+    .my-missions{
+        height: auto;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
