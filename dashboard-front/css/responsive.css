@@ -231,12 +231,13 @@
         font-size:1.6rem;
     }
 
+    /* begin table scroll */
     .col-mv-container{
         position: relative;
     }
 
     .col-mv-scroll{
-        margin-left: calc(100% - 12rem);
+        margin-left: 11.9rem;
         overflow-x: scroll;
         overflow-y: visible;
         padding-bottom: 5px;
@@ -249,9 +250,25 @@
         top: auto;
         width: 12rem;
     }
+    .table-custom thead th.col-mv-stick{
+        min-height: 4.2rem;
+        border: solid 1px #FAFAFA;
+        line-height: 2.5rem;
+    }
+
+    .table-custom tbody tr:nth-child(odd){
+        background: transparent;
+    }
+
+    th.col-mv-stick{
+        vertical-align: middle
+    }
+    /* fin de scroll table */
+
     .my-missions{
         height: auto;
     }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
